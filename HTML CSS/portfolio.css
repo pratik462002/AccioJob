@@ -1,0 +1,300 @@
+
+.body h1{
+width: px;    
+height: px;
+left: 133px;
+margin-top: 120px;
+margin-left: 40px;
+margin-right: 0;
+
+
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 100px;
+line-height: 95.1%;
+
+letter-spacing: 0.02em;
+
+color: #000000;
+
+}
+
+.body h2{
+    
+height: 150px;
+left: px;
+
+margin-left: 30px;
+margin-top: 10px;
+margin-right: 0;
+
+
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 200px;
+line-height: 95.1%;
+/* or 263px */
+
+letter-spacing: 0.02em;
+
+color: #FFC400;
+}
+.body p{
+    width: 500px;
+height: 72px;
+left: 194px;
+margin-top: 40px;
+margin-right: 0;
+margin-left: 90px;
+
+
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 20px;
+line-height: 120%;
+/* or 24px */
+
+letter-spacing: 0.07em;
+
+color: #545353;
+}
+
+.pic{
+    position: absolute;
+    width: 750px;
+height: 750px;
+left: 750px;
+top: 10px;
+
+}
+.line{
+position: absolute;
+width: 30px;
+left: 55px;
+top: 426px;
+background-color:#857979 ;
+border: 2px solid #857979;
+opacity: .5;
+}
+
+.skill h3{
+ position: relative;
+margin-left: 50px;
+font-size: 40px;
+font-weight: 600;
+margin-top: 50px;
+
+}
+
+
+/* .skill1,.skill2, .skill3, .skill4{
+    float: left;
+}
+
+
+.skill1 img{
+    margin-left: 50px;
+    margin-top: 20px;
+
+}
+
+.skill1 p{
+    height: 30px;
+    width: 200px;
+    margin-left: 50px;
+    margin-top: 5px;
+    font-weight:500;
+    color: black;
+}
+
+.skill2 img{
+    margin-left: 50px;
+    margin-top: 20px;
+    
+
+}
+
+.skill2 p{
+    height: 30px;
+    width: auto;
+    margin-left: 50px;
+    margin-top: 5px;
+    font-weight:500;
+    color: black;
+}
+.skilldiv{
+    
+}
+
+.skill3 img{
+    margin-left: 100px;
+    margin-top: 100px;
+}
+
+.project{
+    background-color: rgb(97, 97, 97);
+    margin-top: 300px;
+}
+
+.project h1{
+    font-size: 70px;
+    font-weight: 450;
+    width: 300px;
+    margin-left: 60px;
+}
+ */
+
+.skill1, .skill2{
+ display: inline-block;
+ font-size: 18px;
+ font-weight: 600;
+ padding-left: 50px;
+ 
+}
+
+.skill3, .skill4{
+    display: inline-block;
+    font-size: 18px;
+ font-weight: 600;
+ padding-left: 50px;
+   }
+
+.skill1{
+       margin-top: 20px;
+       margin-right: 150px;
+       margin-bottom: 10px;
+}
+
+.skill3{
+    margin-top: 20px;
+    margin-right: 137px;
+    margin-bottom: 10px;
+}
+
+.skill2, .skill2,.skill3,.skill4, p{
+    margin-left: 6px;
+    margin-top: 10px;
+}
+
+.project{
+    background-color: #FCDA69;
+
+}
+
+
+.project h1{
+    width: 400px;
+    font-size: 80px;
+    font-weight: 500;
+    color: black;
+    margin-left: 50px;
+    padding-top: 20px;
+    margin-right: 0px;
+}
+
+.card{
+    display: inline-block;
+    margin-left:50px;   
+}
+
+.card1{
+    margin-top: 40px;
+    margin-bottom: 100px;
+}
+.card2{
+    margin-left: 105px;
+    margin-top: 60px;
+    
+}
+
+.card3{
+    float: right;
+    margin-right: 50px;
+    margin-top: -160px;
+}
+
+.circle{
+    float: right;
+    margin-top: -300px;
+    margin-right: 105px;
+}
+
+.logo h1{
+    font-size: 70px;
+    font-weight: 500;
+    color: black;
+    margin-top: 60px;
+    background-color: #FCDA69;
+    padding: 20px 50px;
+    width: 900px;
+    border-radius: 0 50px 50px 0px;
+}
+
+
+
+.container div{
+    padding-top: 10px;
+   
+}
+
+.contact{
+    background-color:  #FCDA69;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    position: relative;
+    
+}
+
+.contact h1{
+    font-size: 70px;
+    font-weight: 500;
+    color: black;
+    padding-top: 90px;
+    margin-left: 50px;
+
+}
+
+
+
+.mail{
+    display: flex;
+    margin-left: 50px;
+    font-size: 25px;
+    letter-spacing: 0.07em;
+    align-items: center;
+    padding: 15px;
+    margin-top: 50px;
+    width: 500px;
+}
+
+.mail span{
+    font-weight: bold;
+}
+
+.no{
+    display: flex;
+    margin-left: 50px;
+    font-size: 25px;
+    letter-spacing: 0.07em;
+    align-items: center;
+    padding: 15px;
+    padding-bottom: 90px;
+    width: 400px;
+}
+
+.no span{
+    font-weight: bold;
+}
+
+.hi{
+    width: 500px;
+    position: absolute;
+    top: 130px;
+    left: 900px;
+    display: flex;
+    font-size: 30px;
+    font-weight: 600;
+}

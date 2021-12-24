@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+</head>
+<body>
+    <div>
+        <input type="number" id="num1" placeholder="Enter No.1 ">
+        <select name="operator" id="operator">
+            <option value="+">+ </option>
+            <option value="-"> -</option>
+            <option value="*">* </option>
+            <option value="/">/ </option>
+        </select>
+        <input type="number" id="num2" placeholder="Enter No.2 ">
+        <input type="button" value="=" onclick="calculate()">
+        <input type="number" id="result" placeholder="Result">
+    </div>
+    <script>
+        var num1Input = document.getElementById("num1")
+        var num2Input = document.getElementById("num2")
+        var operator = document.getElementById("operator")
+        var result = document.getElementById("result")
+
+        function calculate(){
+            console.log(operator.value)
+            console.log(num1Input.value)
+            console.log(num2Input.value)
+            if(num1Input.value===""){
+                alert("Please Enter Number")
+            }
+
+
+            if(operator.value==="-")
+                result.value=parseInt(num1Input.value)-parseInt(num2Input.value)
+            else if(operator.value==="+")
+                result.value=parseInt(num1Input.value)+parseInt(num2Input.value)
+            else if(operator.value==="*")
+                result.value=parseInt(num1Input.value)*parseInt(num2Input.value) 
+            else if(operator.value==="/")
+                result.value=parseInt(num1Input.value)/parseInt(num2Input.value) 
+            }
+
+    </script>
+</body>
+</html>
+
+eval func tion
+switch case 
+event listeners
+
+getElementById
+getelementbyclassname
+
+array in js
+array map

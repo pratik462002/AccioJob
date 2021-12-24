@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curousels</title>
+    <link rel="stylesheet" href="silding.css">
+
+</head>
+<body>
+    <div class="title">
+        <h1>
+            New Seven Wonders of the World
+        </h1>
+    </div>
+    <div class="container">
+        <div class="panel active" id="panel-1" onclick="selectpanal1()">
+
+            <h3>Great Wall of China
+            </h3>
+        </div>
+        <div class="panel" id="panel-2" onclick="selectpanal2()">
+
+            <h3>Chichén Itzá
+            </h3>
+        </div>
+        <div class="panel" id="panel-3" onclick="selectpanal3()">
+
+            <h3> Petra, Jordan</h3>
+        </div>
+        <div class="panel" id="panel-4" onclick="selectpanal4()">
+
+            <h3>Machu Picchu
+            </h3>
+        </div>
+        <div class="panel" id="panel-5" onclick="selectpanal5()">
+
+            <h3>Christ the Redeemer
+            </h3>
+        </div>
+        <div class="panel" id="panel-6" onclick="selectpanal6()">
+
+            <h3>Colosseum</h3>
+        </div>
+        <div class="panel"id="panel-7" onclick="selectpanal7()">
+
+            <h3>Taj Mahal
+            </h3>
+        </div>
+    </div>
+
+    <script>
+        // const panels=document.querySelectorAll('.panel')
+
+        // panels.forEach(panel->{
+        //    panel.addEvent 
+        // })
+
+            const panel1xyz =document.getElementById("panel-1")
+            const panel2xyz =document.getElementById("panel-2")
+            const panel3xyz =document.getElementById("panel-3")
+            const panel4xyz =document.getElementById("panel-4")
+            const panel5xyz =document.getElementById("panel-5")
+            const panel6xyz =document.getElementById("panel-6")
+            const panel7xyz =document.getElementById("panel-7")
+
+            function selectpanal1(){
+                panel2xyz.classList.remove("active")
+                panel3xyz.classList.remove("active")
+                panel4xyz.classList.remove("active")
+                panel5xyz.classList.remove("active")
+                panel6xyz.classList.remove("active")
+                panel7xyz.classList.remove("active")
+
+                panel1xyz.classList.add("active")
+            }
+
+            function selectpanal2(){
+                panel1xyz.classList.remove("active")
+                panel3xyz.classList.remove("active")
+                panel4xyz.classList.remove("active")
+                panel5xyz.classList.remove("active")
+                panel6xyz.classList.remove("active")
+                panel7xyz.classList.remove("active")
+
+                panel2xyz.classList.add("active")
+            }
+            function selectpanal3(){
+                panel1xyz.classList.remove("active")
+                panel2xyz.classList.remove("active")
+                panel4xyz.classList.remove("active")
+                panel5xyz.classList.remove("active")
+                panel6xyz.classList.remove("active")
+                panel7xyz.classList.remove("active")
+
+                panel3xyz.classList.add("active")
+            }
+            function selectpanal4(){
+                panel1xyz.classList.remove("active")
+                panel2xyz.classList.remove("active")
+                panel3xyz.classList.remove("active")
+                panel5xyz.classList.remove("active")
+                panel6xyz.classList.remove("active")
+                panel7xyz.classList.remove("active")
+
+                panel4xyz.classList.add("active")
+            }
+            function selectpanal5(){
+                panel1xyz.classList.remove("active")
+                panel3xyz.classList.remove("active")
+                panel4xyz.classList.remove("active")
+                panel2xyz.classList.remove("active")
+                panel6xyz.classList.remove("active")
+                panel7xyz.classList.remove("active")
+
+                panel5xyz.classList.add("active")
+            }
+            function selectpanal6(){
+                panel1xyz.classList.remove("active")
+                panel3xyz.classList.remove("active")
+                panel4xyz.classList.remove("active")
+                panel5xyz.classList.remove("active")
+                panel2xyz.classList.remove("active")
+                panel7xyz.classList.remove("active")
+
+                panel6xyz.classList.add("active")
+            }
+            function selectpanal7(){
+                panel1xyz.classList.remove("active")
+                panel3xyz.classList.remove("active")
+                panel4xyz.classList.remove("active")
+                panel5xyz.classList.remove("active")
+                panel2xyz.classList.remove("active")
+                panel6xyz.classList.remove("active")
+
+                panel7xyz.classList.add("active")
+            }
+
+
+            
+
+
+    </script>
+</body>
+</html>

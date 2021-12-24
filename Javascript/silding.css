@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap");
+
+
+#panel-1{
+    background-image: url( "https://cdn.britannica.com/q:60/82/94382-050-20CF23DB/Great-Wall-of-China-Beijing.jpg");
+}
+#panel-2{
+    background-image: url("https://cdn.britannica.com/q:60/49/61349-050-9FFBEB28/El-Castillo-pyramid-plaza-Toltec-state-Yucatan.jpg ");
+}
+#panel-3{
+    background-image: url("https://cdn.britannica.com/q:60/25/153525-050-FC43840D/Khaznah-Petra-Jordan.jpg ");
+}
+#panel-4{
+    background-image: url( "https://cdn.britannica.com/q:60/30/94530-050-99493FEA/Machu-Picchu.jpg");
+}
+#panel-5{
+    background-image: url("https://cdn.britannica.com/q:60/54/150754-050-5B93A950/statue-Christ-the-Redeemer-Rio-de-Janeiro.jpg ");
+}
+#panel-6{
+    background-image: url("https://cdn.britannica.com/q:60/36/162636-050-932C5D49/Colosseum-Rome-Italy.jpg ");
+}
+#panel-7{
+    background-image: url("https://cdn.britannica.com/q:60/86/170586-050-AB7FEFAE/Taj-Mahal-Agra-India.jpg ");
+}
+
+.container{
+    display: flex;
+    width: 90vw;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0%;
+    align-items: center;
+    position: relative;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    /* display: flex;
+    justify-content: center;
+    overflow: hidden;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0%;
+    align-items: center;
+    position: relative; */
+}
+
+.panel{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 70vh;
+    border-radius: 50px;
+    color: white;
+    cursor: pointer;
+    flex: 0.5;
+    margin: 10px;
+    position: relative;
+    margin-top: 50px;
+    transition: ;
+
+}
+
+.panel.active{
+    flex:5;
+}
+.panel.active h3{
+    opacity: 1;
+}
+
+@media (max-width) {
+    .container{
+        width: 100vw;
+
+    }
+    .panel:nth-of-type(4)
+    .panel:nth-of-type(5){
+        display: none;
+    }
+    
+}
+
+.panel h3{
+    font-size: 25px;
+    position: absolute;
+    bottom: 2px;
+    font-weight: 500;
+    left: 20px;
+    opacity: 0;
+}
+/* h1{
+    position: absolute;
+    top: 20px;
+    justify-content: center;
+}  */
+
+
+h1{
+    text-align: center;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 50px;
+    border: ;
+
+}

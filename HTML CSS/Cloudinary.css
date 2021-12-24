@@ -1,0 +1,53 @@
+.body{
+ height: 1800PX;
+ width: 1300px;
+ margin: auto;
+}
+.navbar li{
+    list-style-type: none;
+    float: left;
+    margin-right: 20px;
+    height: 80px;
+    background-color: white;
+    
+    margin-top: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    margin-bottom: auto;
+
+
+}
+
+.navbar a{
+    text-decoration: none;
+    color: grey;
+}
+
+.Search{
+    margin-top: 30px;
+    float: right;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    width: 200px;
+    height: 25px;
+}
+
+.top img{
+    
+    float: left;
+    height: 280px;
+    margin-left: 3opx;
+    margin-top:50px ;
+
+}
+
+.top{
+    height: 280px;
+
+}
+.content{
+    float: right;
+    height: 280px;
+    width: 700px;
+    margin-right: 5px;
+}
