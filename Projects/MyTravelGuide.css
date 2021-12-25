@@ -1,0 +1,14 @@
+.carousel-caption h5{
+    font-size: 1rem;
+    color: white;
+    padding: 5px;
+
+}
+.carousel-caption{
+    padding: 0;
+}
+
+.carousel-indicators{
+    margin-bottom: 0px;
+}
+
