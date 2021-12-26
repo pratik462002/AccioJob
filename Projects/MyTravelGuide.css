@@ -1,14 +1,123 @@
-.carousel-caption h5{
-    font-size: 1rem;
-    color: white;
-    padding: 5px;
-
-}
-.carousel-caption{
-    padding: 0;
+/*@import url(https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&family=Oswald:wght@400;500&family=Roboto:wght@400;500;700&display=swap); */
+.navbar-brand {
 }
 
-.carousel-indicators{
-    margin-bottom: 0px;
+.title h1 {
+  font-size: 2rem;
+  margin-top: 15px;
+  font-weight: 630;
+}
+.title {
+  margin-left: 10px;
+}
+.fas {
+  color: #ff443e;
+}
+
+.carousel-caption h5 {
+  font-size: 1rem;
+  color: white;
+  padding: 0px;
+}
+
+.carousel-caption {
+  padding: 0;
+}
+
+.carousel-indicators {
+  margin-bottom: 0px;
+}
+
+.basicinfo {
+  background-color: rgb(227, 240, 253);
+  padding: 10px;
+}
+
+.basicinfo span {
+  font-weight: 650;
+}
+
+.title2 {
+  margin: 15px 10px 10px 0px;
+  /* font-size: 1.5rem; */
+  font-weight: 630;
+}
+
+.overview {
+  margin-left: 10px;
+}
+.overview button {
+  color: #1d83db;
+  border: #1d83db solid 1px;
+  font-weight: 550;
+  border-radius: 5px;
+  width: 40%;
+  padding: 10px;
+}
+
+.more {
+  margin: 20px 10px 10px 10px;
+}
+
+.more button {
+  font-weight: 550;
+  padding-left: 10px;
+}
+
+
+.scrolling-wrapper {
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+  /* -webkit-overflow-scrolling: touch; */
+}
+.card {
+  display: inline-block;
+  height: 20rem;
+  margin: 10px;
+  border-radius: 15px;
+}
+
+.card-text span {
+  font-size: 25px;
+  font-weight: 600;
+  margin: 10px;
+}
+
+.card-title {
+  font-size: 18px;
+  margin: 15px 10px;
+}
+
+.card button {
+  font-size: 15px;
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+
+.hotels h1{
+    margin: 15px 10px ;
+}
+
+.media img{
+    
+}
+
+.icon{
+    width: 3rem;
+    margin: 10px;
+    border-radius: 50%;
+}
+.contact{
+    margin-top: 30px;
+}
+
+.contact h1 {
+    font-size: 25px;
+    margin-top: 20px;
+}
+
+.no{
+    margin-bottom: 5px;
 }
 

@@ -1,112 +1,759 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>MyTravelGuide</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <!-- google fonts links -->
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&family=Oswald:wght@400;500&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&family=Oswald:wght@400;500&family=Roboto:wght@400;500;700&display=swap"
+    />
     <!-- bootstrap cdn -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
     <!-- external css -->
-    <link rel="stylesheet" href="MyTravelGuide.css">
+    <link rel="stylesheet" href="MyTravelGuide.css" />
     <!-- font-awesome icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-
-</head>
-<body>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body >
     <!-- Navbar section -->
     <section>
-        <nav class="navbar navbar-expand-sm bg-light navbar-light">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="#">MyTravelGuide</a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="collapsibleNavbar">
-                <ul class="navbar-nav">
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </nav>
+      <nav class="navbar navbar-expand-sm bg-light navbar-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img
+              src="https://www.holidify.com/res/images/icons/holidify-logo.svg"
+              alt=""
+              width="70"
+              height="30"
+              class="d-inline-block align-text-top"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapsibleNavbar"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="#home">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#overview">Overview</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#hotels">Hotels</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
     </section>
 
     <!-- curousel of images -->
-    <section>
-        <div id="carouselExampleDark" class="carousel carousellight slide" data-bs-ride="carousel">
-            <div class="carousel-indicators">
-              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
-              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    <section >
+      <div
+        id="carouselExampleDark"
+        class="carousel carousellight slide"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleDark"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleDark"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleDark"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleDark"
+            data-bs-slide-to="3"
+            aria-label="Slide 4"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleDark"
+            data-bs-slide-to="4"
+            aria-label="Slide 5"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="10000">
+            <img
+              src="https://www.holidify.com/images/cmsuploads/compressed/Shanivar_Wada(1)_20170831190942.jpg"
+              class="d-block w-100"
+              alt="..."
+            />
+            <div class="carousel-caption">
+              <h5>Shaniwar Wada</h5>
+              <!-- <p>Some representative placeholder content for the first slide.</p> -->
             </div>
-            <div class="carousel-inner">
-              <div class="carousel-item active" data-bs-interval="10000">
-                <img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg" class="d-block w-100" alt="...">
-                <div class="carousel-caption ">
-                  <h5>First slide label</h5>
-                  <!-- <p>Some representative placeholder content for the first slide.</p> -->
-                </div>
-              </div>
-              <div class="carousel-item" data-bs-interval="2000">
-                <img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg" class="d-block w-100" alt="...">
-                <div class="carousel-caption ">
-                  <h5>Second slide label</h5>
-                  <!-- <p>Some representative placeholder content for the second slide.</p> -->
-                </div>
-              </div>
-              <div class="carousel-item">
-                <img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg" class="d-block w-100" alt="...">
-                <div class="carousel-caption ">
-                  <h5>Third slide label</h5>
-                  <!-- <p>Some representative placeholder content for the third slide.</p> -->
-                </div>
-              </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
           </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <img
+              src="https://www.holidify.com/images/compressed/attractions/attr_1849.jpg"
+              class="d-block w-100"
+              alt="..."
+            />
+            <div class="carousel-caption">
+              <h5>Architecture of Shaniwar Wada</h5>
+              <!-- <p>Some representative placeholder content for the second slide.</p> -->
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="https://www.holidify.com/images/compressed/2198.jpg"
+              class="d-block w-100"
+              alt="..."
+            />
+            <div class="carousel-caption">
+              <h5>Haunted Past of Shaniwar Wada</h5>
+              <!-- <p>Some representative placeholder content for the third slide.</p> -->
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="https://holidify.com/images/attr_wiki/compressed/attr_wiki_1161.jpg"
+              class="d-block w-100"
+              alt="..."
+            />
+            <div class="carousel-caption">
+              <h5>Fountains of Shaniwar Wada</h5>
+              <!-- <p>Some representative placeholder content for the third slide.</p> -->
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="https://holidify.com/images/attr_wiki/compressed/attr_wiki_1156.jpg"
+              class="d-block w-100"
+              alt="..."
+            />
+            <div class="carousel-caption">
+              <h5>Raj Darwaja</h5>
+              <!-- <p>Some representative placeholder content for the third slide.</p> -->
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleDark"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleDark"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
     </section>
     <!-- Basic Info -->
     <section>
-        <div class="title">
-            <h1> Shaniwar Wada</h1>
-            <p><i class="fab fa-location fs-25"></i> Pune . Maharastra Goa Highway</p>
-            <p>Category: Historicat Place</p>
-            <p> Rating &nbsp;<button type="button" class="btn btn-primary position-relative">
-                4.3 <span style="opacity: .5;">/5</span>
-                <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
-                  99+
-                  <span class="visually-hidden">unread messages</span>
-                </span>
-              </button>
-            </p>
-        </div>
-        
+      <div class="title">
+        <h1>Shaniwar Wada</h1>
+        <p>
+          <i class="fas fa-map-marker-alt"></i>
+          <a
+            href="https://www.google.com/maps/place/Shaniwar+Wada/@18.5194647,73.8553175,3a,75y,90t/data=!3m8!1e2!3m6!1sAF1QipOyZP1mg7bydwjqKPw9-KxPt2uGFMp2ZNrs5jIH!2e10!3e12!6shttps:%2F%2Flh5.googleusercontent.com%2Fp%2FAF1QipOyZP1mg7bydwjqKPw9-KxPt2uGFMp2ZNrs5jIH%3Dw203-h152-k-no!7i4032!8i3024!4m8!1m2!2m1!1sshaniwar+wada+images!3m4!1s0x3bc2c065144d8edf:0x3703b8095866c54b!8m2!3d18.5194647!4d73.8553175?hl=en"
+          >
+            Pune . Maharastra Goa Highway</a
+          >
+        </p>
+        <p><i class="fas fa-hashtag"></i> Category: Historical Place</p>
+        <p>
+          <i class="fas fa-star"></i> Rating &nbsp;<button
+            type="button"
+            class="btn btn-primary position-relative"
+          >
+            4.3 <span style="opacity: 0.5">/5</span>
+            <span
+              class="
+                position-absolute
+                top-0
+                start-100
+                translate-middle
+                badge
+                rounded-pill
+                bg-danger
+              "
+            >
+              99+
+              <span class="visually-hidden">unread messages</span>
+            </span>
+          </button>
+        </p>
+      </div>
     </section>
-    
+    <!-- basic info about place -->
+    <section  id="home" class="basicinfo">
+      <div class="weather">
+        <p><span>Weather:</span> 26° C</p>
+      </div>
+      <div class="timing">
+        <p>
+          <span>Timing:</span> Ticket booking for light and sound show:6.30 PM-
+          8.30PM every day
+        </p>
+      </div>
+      <div class="time">
+        <p><span>Time Required:</span> 1-3hours</p>
+      </div>
+      <div class="entery fee">
+        <p>
+          <span>Entry Fee:</span>1-Indian citizens:5 INR <br />
+          2-Light and sound show:25 INR <br />3-Foreigners: 125 INR
+        </p>
+      </div>
+    </section>
+    <!-- main discription -->
+    <section id="overview" class="overview">
+      <div>
+        <h1 class="title2">Shaniwar Wada, Pune Overview</h1>
+        <p>
+          <span id="inline"
+            >Shaniwarwada, once the seat of the Peshwa governance in Pune is a
+            286-year-old mansion and is one of the finest examples of
+            architecture in the city. It is now one of the most popular tourist
+            destinations in Maharashtra.</span
+          ><span id="dots">...</span
+          ><span id="more"
+            >This grand mansion was built by the Peshwa Bajirao I himself as the
+            residence of the Peshwas. Although the Wada currently covers an area
+            of 625 acres, in its heyday it covered almost the entire area of the
+            city itself. The place never fails to amaze the visitor with its
+            various forts and fountain, and the majestic statue of Baji Rao I
+            that greets the visitor at the entrance of the palace. Although most
+            of the Wada was destroyed by an unexplained fire in 1828, what
+            remains of it is equally thrilling and majestic. The Shaniwar Wada,
+            although ridden with tales of treachery and deceit, is one of the
+            last standing testimonies to the grandeur, valour, and the just rule
+            of the Peshwas. The entire old part of the city of Pune is laid out
+            in a chaotic yet ironically, orderly fashion all around this
+            historical structure. It is around Shaniwar Wada that you will find
+            the oldest markets of Pune including Laxmi Road, Tulshibaug, Ravivar
+            Peth etc. It is said that on a full moon night the fort is haunted
+            by the ghost of a former Peshwa king Narayanrao as he was murdered
+            in the palace by his aunt and uncle - Anandi and Raghunathrao.
+            However, there is not a shred of evidence to support such claims.
+            So, you can get a glimpse of history and some drama as well! This
+            was after all the site of the famed romance between Peshwa Bajirao
+            and Mastani Sahiba. In fact, one of the gates has also been named
+            after her!</span
+          >
+        </p>
 
+        <button onclick="myFunction()" id="myBtn">Read more</button>
+      </div>
+    </section>
 
+    <!-- more info -->
+    <section class="more">
+      <h1>Read More on Shaniwar Wada</h1>
+      <div class="accordion accordion-flush" id="accordionFlushExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingOne">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseOne"
+              aria-expanded="false"
+              aria-controls="flush-collapseOne"
+            >
+              Shaniwar Wada History
+            </button>
+          </h2>
+          <div
+            id="flush-collapseOne"
+            class="accordion-collapse collapse"
+            aria-labelledby="flush-headingOne"
+            data-bs-parent="#accordionFlushExample"
+          >
+            <div class="accordion-body">
+              The Shaniwar Wada was built by Bajirao I in the 18th century.
+              Bajirao served as the Peshwa or the Prime Minister to the Maratha
+              ruler- Chhatrapati Sahu. The palace was at first supposed to be a
+              massive 7-storey stone structure, but after the completion of the
+              base floor, much hue and cry arose. The people objected to the
+              construction on the grounds of the fact that stone palaces could
+              be sanctioned and built only be the king and not by his Peshwa.
+              Following this, it was decided that the remaining building would
+              be constructed in brick, and not stone. Shaniwar Wada was finally
+              completed, but little did anyone know that the monument would
+              witness some murky and horrifying times in the days to come. 90
+              years later, the palace was attacked by the British Artillery,
+              which caused the entire six storeys to collapse and fall. Only the
+              stone base remained to testify the grandeur and glory of the
+              period passed. On February 27 in 1828, a great mysterious fire
+              started inside the compound. The fire that raged on for seven days
+              razed the entire palace to the ground and what remained were large
+              granite ramparts and ruins of the buildings, along with a few
+              strong teak gateways.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingTwo">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseTwo"
+              aria-expanded="false"
+              aria-controls="flush-collapseTwo"
+            >
+              Construction and Structure of Shaniwar Wada
+            </button>
+          </h2>
+          <div
+            id="flush-collapseTwo"
+            class="accordion-collapse collapse"
+            aria-labelledby="flush-headingTwo"
+            data-bs-parent="#accordionFlushExample"
+          >
+            <div class="accordion-body">
+              The ceremonial foundation of Shaniwar Wada was laid down by Peshwa
+              Baji Rao I on Saturday, January 10 in 1730. The palace was named
+              Shaniwar Wada after the Marathi words Shaniwar (Saturday) and Wada
+              (residential complex). The teak for the construction was imported
+              from the jungles of Junnar; lime was fetched from the lime-belts
+              of Jejuri and stone was brought from the quarries of Chinchwad.
+              The total cost incurred in the construction at that time was INR
+              16,110: a sum that was considered to be a fortune in those times.
+              Several additions were made later on, such as the fortification
+              walls with gates and bastions. Court-halls and other fountains and
+              reservoirs were also added. The walls of the palace were painted
+              with scenes from the Mahabharata and the Ramayana. Teak doorways
+              were scattered all over the fort, and the beautiful marble floors
+              were covered with Persian rugs. The Ganpati Rang Mahal is another
+              significant site. It was the place for all religious functions of
+              the Peshwas and housed a giant statue of Lord Ganesha. Currently,
+              the complex comprises of the perimeter fortification wall with
+              five getaways (the Dilli gate, the Mastani gate, the Khidki
+              Darwaza, the Ganpati gate and the Narayan gate), nine bastion
+              towers and a garden complex. A sixteen petal lotus-shaped fountain
+              stands indicative of the exquisite work of those times. A few
+              surviving cannons can also be found here: one at the entrance and
+              one within the complex.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingThree">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseThree"
+              aria-expanded="false"
+              aria-controls="flush-collapseThree"
+            >
+              Shaniwar Wada Haunted Story
+            </button>
+          </h2>
+          <div
+            id="flush-collapseThree"
+            class="accordion-collapse collapse"
+            aria-labelledby="flush-headingThree"
+            data-bs-parent="#accordionFlushExample"
+          >
+            <div class="accordion-body">
+              This popular tourist destination in Maharashtra is as famous for
+              its spookiness, and it is for its historical significance. In
+              fact, Shaniwar Wada is one of the most haunted locations in the
+              country. The story starts with Peshwa Narayan Rao and his
+              differences with his greedy and rebellious uncle Raghunath Rao. It
+              is widely believed that Raghunath Rao has sent a message to get
+              hold of Narayan Rao by stating- 'Narayan Rao la dhara', which
+              means 'Hold Narayan Rao'. However, before the message reached the
+              guards, Raghunath Rao' s wife Anandibai changed it to 'Narayan Rao
+              la mara' or 'Kill Narayan Rao'. What followed was the ghastly
+              murder of the Peshwa, who cried and ran about the fort screaming
+              "Kaka mala vachva", which meant "Uncle save me!" The spot where he
+              was murdered is believed to be haunted by his spirit till date,
+              which moves about the fort and urges his uncle to save him. People
+              who live close by swear to having heard his cries on particular
+              nights.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingFour">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseFour"
+              aria-expanded="false"
+              aria-controls="flush-collapseFour"
+            >
+              Shaniwar Wada Light and Sound Show
+            </button>
+          </h2>
+          <div
+            id="flush-collapseFour"
+            class="accordion-collapse collapse"
+            aria-labelledby="flush-headingFour"
+            data-bs-parent="#accordionFlushExample"
+          >
+            <div class="accordion-body">
+              A Light and Sound show has been set up at the Shaniwar Wada at a
+              total cost of INR 1.25 crores to educate and inform the general
+              public about the rich history of those times. The show is held
+              every day in the evenings. The timings of the show are as follows:
+              Marathi Show: 7:15 PM to 8:10 PM English Show: 8:15 PM to 9:10 PM
+              The price of the ticket is a nominal INR 25 per head and can be
+              purchased every day between 6:30 PM and 8:30 PM. There is no
+              advance booking and tickets are available on the spot.
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingFive">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseFive"
+                aria-expanded="false"
+                aria-controls="flush-collapseFive"
+              >
+                Shaniwar Wada Timings and Entry Fee
+              </button>
+            </h2>
+            <div
+              id="flush-collapseFive"
+              class="accordion-collapse collapse"
+              aria-labelledby="flush-headingFive"
+              data-bs-parent="#accordionFlushExample"
+            >
+              <div class="accordion-body">
+                The Shaniwar Wada is open every day from 8:00 AM to 6:30 PM. The
+                entry ticket to the palace costs INR 5 per head for Indians and
+                INR 125 for foreigners. This does not include the entry fee for
+                the Light and Sound Show.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
+    <!-- hotels card -->
+    <section  id="hotels" class="hotels">
+      <h1>Top Hotels Near Shaniwar Wada</h1>
+      <div class="scrolling-wrapper">
+        <div class="card" style="width: 15rem">
+          <img
+            src="https://badianhotel.com/wp-content/uploads/2020/08/baglioni-hotel-london.jpg"
+            class="card-img-top"
+            alt=""
+          />
+          <h5 class="card-title" style="width: rem">
+            Novotel Pune Viman <br />
+            Nagar Road
+          </h5>
+          <button type="button" class="btn btn-primary position-relative">
+            4.3 <span style="opacity: 0.5">/5</span>
+            <span
+              class="
+                position-absolute
+                top-0
+                start-100
+                translate-middle
+                badge
+                rounded-pill
+                bg-danger
+              "
+            >
+              99+
+              <span class="visually-hidden">unread messages</span>
+            </span>
+          </button>
+          <p class="card-text"><span>₹ 10,960</span> onwards</p>
+        </div>
+
+        <div class="card" style="width: 15rem">
+          <img
+            src="https://badianhotel.com/wp-content/uploads/2020/08/baglioni-hotel-london.jpg"
+            class="card-img-top"
+            alt=""
+          />
+          <h5 class="card-title" style="width: rem">
+            Novotel Pune Viman <br />
+            Nagar Road
+          </h5>
+          <button type="button" class="btn btn-primary position-relative">
+            4.3 <span style="opacity: 0.5">/5</span>
+            <span
+              class="
+                position-absolute
+                top-0
+                start-100
+                translate-middle
+                badge
+                rounded-pill
+                bg-danger
+              "
+            >
+              99+
+              <span class="visually-hidden">unread messages</span>
+            </span>
+          </button>
+          <p class="card-text"><span>₹ 10,960</span> onwards</p>
+        </div>
+
+        <div class="card" style="width: 15rem">
+          <img
+            src="https://badianhotel.com/wp-content/uploads/2020/08/baglioni-hotel-london.jpg"
+            class="card-img-top"
+            alt=""
+          />
+          <h5 class="card-title" style="width: rem">
+            Novotel Pune Viman <br />
+            Nagar Road
+          </h5>
+          <button type="button" class="btn btn-primary position-relative">
+            4.3 <span style="opacity: 0.5">/5</span>
+            <span
+              class="
+                position-absolute
+                top-0
+                start-100
+                translate-middle
+                badge
+                rounded-pill
+                bg-danger
+              "
+            >
+              99+
+              <span class="visually-hidden">unread messages</span>
+            </span>
+          </button>
+          <p class="card-text"><span>₹ 10,960</span> onwards</p>
+        </div>
+
+        <div class="card" style="width: 15rem">
+          <img
+            src="https://badianhotel.com/wp-content/uploads/2020/08/baglioni-hotel-london.jpg"
+            class="card-img-top"
+            alt=""
+          />
+          <h5 class="card-title" style="width: rem">
+            Novotel Pune Viman <br />
+            Nagar Road
+          </h5>
+          <button type="button" class="btn btn-primary position-relative">
+            4.3 <span style="opacity: 0.5">/5</span>
+            <span
+              class="
+                position-absolute
+                top-0
+                start-100
+                translate-middle
+                badge
+                rounded-pill
+                bg-danger
+              "
+            >
+              99+
+              <span class="visually-hidden">unread messages</span>
+            </span>
+          </button>
+          <p class="card-text"><span>₹ 10,960</span> onwards</p>
+        </div>
+
+        <div class="card" style="width: 15rem">
+          <img
+            src="https://badianhotel.com/wp-content/uploads/2020/08/baglioni-hotel-london.jpg"
+            class="card-img-top"
+            alt=""
+          />
+          <h5 class="card-title" style="width: rem">
+            Novotel Pune Viman <br />
+            Nagar Road
+          </h5>
+          <button type="button" class="btn btn-primary position-relative">
+            4.3 <span style="opacity: 0.5">/5</span>
+            <span
+              class="
+                position-absolute
+                top-0
+                start-100
+                translate-middle
+                badge
+                rounded-pill
+                bg-danger
+              "
+            >
+              99+
+              <span class="visually-hidden">unread messages</span>
+            </span>
+          </button>
+          <p class="card-text"><span>₹ 10,960</span> onwards</p>
+        </div>
+      </div>
+
+      <!-- <div class="card" style="width: 14rem;">
+        <img src="https://badianhotel.com/wp-content/uploads/2020/08/baglioni-hotel-london.jpg" class="card-img-top" alt="">
+        <div class="card-body">
+          <h5 class="card-title" style="width: rem;" >Novotel Pune Viman Nagar Road</h5>
+        <button
+          type="button"
+          class="btn btn-primary position-relative"
+        >
+          4.3 <span style="opacity: 0.5">/5</span>
+          <span
+            class="
+              position-absolute
+              top-0
+              start-100
+              translate-middle
+              badge
+              rounded-pill
+              bg-danger
+            "
+          >
+            99+
+            <span class="visually-hidden">unread messages</span>
+          </span>
+        </button>
+          <p>
+         
+          </p>
+          <p class="card-text"><span>₹ 10,960</span> onwards</p>
+      </div>
+         <div class="card" style="width: 14rem;">
+          <img src="https://badianhotel.com/wp-content/uploads/2020/08/baglioni-hotel-london.jpg" class="card-img-top" alt="">
+          <div class="card-body">
+            <h5 class="card-title" style="width: rem;" >Novotel Pune Viman Nagar Road</h5>
+          <button
+            type="button"
+            class="btn btn-primary position-relative"
+          >
+            4.3 <span style="opacity: 0.5">/5</span>
+            <span
+              class="
+                position-absolute
+                top-0
+                start-100
+                translate-middle
+                badge
+                rounded-pill
+                bg-danger
+              "
+            >
+              99+
+              <span class="visually-hidden">unread messages</span>
+            </span>
+          </button>
+            <p>
+           
+            </p>
+            <p class="card-text"><span>₹ 10,960</span> onwards</p>
+          </div>
+          <div class="card" style="width: 14rem;">
+            <img src="https://badianhotel.com/wp-content/uploads/2020/08/baglioni-hotel-london.jpg" class="card-img-top" alt="">
+            <div class="card-body">
+              <h5 class="card-title" style="width: rem;" >Novotel Pune Viman Nagar Road</h5>
+            <button
+              type="button"
+              class="btn btn-primary position-relative"
+            >
+              4.3 <span style="opacity: 0.5">/5</span>
+              <span
+                class="
+                  position-absolute
+                  top-0
+                  start-100
+                  translate-middle
+                  badge
+                  rounded-pill
+                  bg-danger
+                "
+              >
+                99+
+                <span class="visually-hidden">unread messages</span>
+              </span>
+            </button>
+              <p>
+             
+              </p>
+              <p class="card-text"><span>₹ 10,960</span> onwards</p>
+            </div>
+
+     
+      
+    </div> -->
+    </section>
+    <!-- contact section  -->
+    <section id="contact" class="container">
+      <div class="contact">
+        <img src="https://www.holidify.com/res/images/icons/holidify-logo.svg" alt="">
+        <br>
+        <div class="mb-3">
+          <label for="formGroupExampleInput" class="form-label">Name</label>
+          <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Enter your name here">
+        </div>
+        <div class="mb-3">
+          <label for="formGroupExampleInput2" class="form-label">Feedback</label>
+          <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Enter your openion">
+        </div>
+        <div class="col-12">
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </div>
+
+        <h1>Contact Us</h1>
+        <p class="no"><b>Mobile No :</b> +91 9604149110 / +91 9022452678</p>
+        <p class="no"><b>Mail Id :</b> holidify@gmail.com </p>
+
+        <h1 class="media">Follow Us</h1>
+        <a href="https://www.holidify.com/places/pune/shaniwar-wada-sightseeing-3313.html"> <img class="icon" src="data:image/jpeg;base64,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" alt=""></a>
+        <a href="https://www.holidify.com/places/pune/shaniwar-wada-sightseeing-3313.html"><img class="icon" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAb1BMVEVCZ7L///+5w95GarM2YK80Xq+pttc+ZbFfe7s6YrCHmsmZqdA8Y7Ds8PdSdLlffr3V3OyQpNFrh8Lg5vIvW633+fyCmsxKb7fG0eier9WtutnAy+Ta4e91jsR8k8eMn8zP1ulvh8Dx9PkmVqvo7ff2SOu1AAAEYklEQVR4nO3da3uqOBSG4YDBmDYkHEStp1qn//83jqfuvWemoxGarBWu9/myP9XNfS0sIJGK7FpZ1Y0VY8k2dVXeZOL6T+6kNtTb9YMZLV3+h7B1cky8a0a69ktYWU29OUHStroKWzu+AV4ztr0I3TgneE67szCX1NsRMJlnonRj3UfPGVeKaswjPA2xEvV434XndC2aMe+kp920EeM5Vfu+sfsQQgghhBBCCCGEEPJJKWOM1lpKfc5cUkoo6g37mbQshG12+8XLe/1+6mWx3+8+GjezSyXnRXESq1SpyuhiPlmsq21bHrvudrc667ruWJafn227rQ6b9euisUWStySUFM3r6pfrfq/pEc18Oa2OfryzMLW7Lnry4Tu9JGeoin31DC+1GSrjDk/NL7UZmsn0aV9SM5R2+7wvoRmq4q3HABMSnoC9fMnspWqy6glMZIbKbPoCU5lhf2AaMyym/YFJzFDXA4ApzNA0/qfZSc5QyWfPRFOboR7yJkxBaNygfTSBvXTe+1CfyAyNGwjkPkOlhv2a4T9Ds+t3QZHODE0+FMh8hmo5eITMZygHna+lMEPZ63OLhITGlY8FD4Wc91LZ95OLfwgZz1ANufD9LWQ8Q2U/f0LIeIZm9gSk267y9Xo9/XfrD8bfFtELX95xs58tJ0rLb2IMFIXnCU05nRQmyRvbc7+jYTXTCeIuSa9r343ivB/eb+kjLJfpAk3jc9q9Y3wweJTZewhXyS4nEZ4XFu8Jj1Do18fA0iY8Qq/z7kNBvZVD8rkfM01aKNceb0PGFw6P8zlpS/tL2D7C2eiFSf8q9RIuqTdyUD7CCfVGDgpCCPkHIYT8gxBC/kEIIf8ghJB/EELIv1EI1Xc33r/6y0NoinuvcIr4E2Pl/rt24o88bnLf+/FLb7RE/fLYMLDP+diFK9pbNxGEa9o7qBGExKvaIghfxi7sdrQ3p8ILqR9FHl7YEt9+Cy+sJmMXHoiX24QX5sRrNcIL30Y/wz3xSobwQuq/WxFeSOuLIOxor50iCNvRCzfUC/uCC8mXLgYX1tQriIMLqQ+HwYUd+eLM0MLSUS9dDC3cki/ODC08EF8dhhduqN+GwYXEH5ZGENJ/BTiwsCM/HAYXkh8OQwuP9OvcQwupz7uDC7fUV4cn4XtQIfG9w3Nq6Wb/n/V4ZsS9n59x+LuG6l5zj5UKwtx5AWrdw0ax2uRuEELIPwgh5B+EEPIPQgj5ByGE/IMQQv5BCCH/IISQfxBCyD8IIeQfhBDyD0II+QchhPyDEEL+QQgh/yCEkH8QQsg/CCHkH4QQ8g9CCPkHIYT8gxBC/kEIIf8g/EEh0bMJogmtIHrMSyyhaURN8zCiWEJdi4rmgVKxhLISRA82jyQ0rhRZTjLESEKZZyLrHMU7MY5Qu+wkzFpLsJ9GERrbXoRZZeNPMYZQ2yq7CrPWydhjDC800rXZlzDrcid1VGRgodHS3f4HcXu1sqqbmCdwYYW2qavy9ip/A3YKUMidEST2AAAAAElFTkSuQmCC"></a>
+        <a href="https://www.holidify.com/places/pune/shaniwar-wada-sightseeing-3313.html"><img class="icon" src="https://www.chalearning.ca/wp-content/uploads/2021/03/pnglot.com-twitter-bird-logo-png-139932.png"></a>
+        <a href="https://www.holidify.com/places/pune/shaniwar-wada-sightseeing-3313.html"><img class="icon" src="https://seeklogo.com/images/P/pinterest-icon-logo-D4965B6748-seeklogo.com.png"></a>
+        
+      </div>
+    </section>
+    <br>
+    <p>&copy; 2022 Design by Pratik</p>
     <!-- external java script -->
     <script src="MyTravelGuide.js"></script>
-</body>
+
+  
+  </body>
 </html>
