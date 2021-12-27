@@ -12,7 +12,7 @@ function clickingxyz(btnxyz){
                 displayxyz.innerText=""
                 break
             case '←':
-                displayxyz.innerText= displayxyz.innerText.slice(0.-1)
+                displayxyz.innerText= displayxyz.innerText.slice(0,-1)
                 break    
             case '=':
                 displayxyz.innerText= eval(displayxyz.innerText)
