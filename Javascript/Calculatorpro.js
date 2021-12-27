@@ -1,28 +1,41 @@
+let displayxyz = document.getElementById("display");
 
+// let buttonxyz= Array.from(document.getElementsByClassName("btn"))
 
-let displayxyz=document.getElementById("display")
+// function clickingxyz(btnxyz){
+//     btnxyz.addEventListener("click",(xyz)=>{
+//         switch(xyz.target.innerText){
+//             case 'C':
+//                 displayxyz.innerText=""
+//                 break
+//             case '←':
+//                 displayxyz.innerText= displayxyz.innerText.slice(0,-1)
+//                 break
+//             case '=':
+//                 displayxyz.innerText= eval(displayxyz.innerText)
+//                 break
+//             default:
+//                 displayxyz.innerText = display.innerText + xyz.target.innerText
+//             break
+//         }
+//     })
 
-let buttonxyz= Array.from(document.getElementsByClassName("btn"))
+// }
 
+// buttonxyz.map(abcxyz=>clickingxyz(abcxyz))
 
-function clickingxyz(btnxyz){
-    btnxyz.addEventListener("click",(xyz)=>{
-        switch(xyz.target.innerText){
-            case 'C':
-                displayxyz.innerText=""
-                break
-            case '←':
-                displayxyz.innerText= displayxyz.innerText.slice(0,-1)
-                break    
-            case '=':
-                displayxyz.innerText= eval(displayxyz.innerText)
-                break
-            default:
-                displayxyz.innerText = display.innerText + xyz.target.innerText
-            break    
-        }
-    })
-
+function clickonbutton(value) {
+  displayxyz.innerText = displayxyz.innerText + value;
 }
 
-buttonxyz.map(abcxyz=>clickingxyz(abcxyz))
+function clearxyz(){
+    displayxyz.innerText=""
+}
+
+function backxyz(){
+    displayxyz.innerText=displayxyz.innerText.slice(0,-1)
+}
+
+function equalxyz(){
+    displayxyz.innerText=eval(displayxyz.innerText)
+}
