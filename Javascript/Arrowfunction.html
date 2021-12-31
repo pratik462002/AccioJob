@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Arrow</title>
+
+    <script>
+      // function fun1(a,b){
+      //     return a-b
+      // }
+      // console.log(fun1(13,9))
+      // // arrow=  => it is just notation in es6
+      // let fun2 = () =>{
+      //     console.log('Arrow')
+      // }
+
+      // fun2()
+
+      // let fun2 = () => {
+      //   return "Arrow";
+      // };
+      // console.log(fun2());
+
+      // let fun2 = () => "Arrow";
+      // console.log(fun2());
+
+      // let fun2 = (a, b) => a + b;
+      // console.log(fun2(2, 5));
+
+      // const fullnames = (first, second) => {
+      //   return first + " " + second;
+      // };
+
+      // console.log(fullnames("Pratik", "Mirchapure"));
+
+      // const check = (num) => {
+      //   let number = num % 3 === 0 && num % 5 === 0;
+      //   if (number) return "Divisible";
+      //   else return "non Divisible";
+      // };
+      // console.log(check(15));
+
+      // const check = (input) => {
+      //   if (input.charAt(0) === input.charAt(0).toUppercase()) {
+      //     return input;
+      //   } else {
+      //     return input.charAt(0).toUppercase() + input.slice(1);
+      //   }
+      // };
+
+      // console.log(check("pratik"));
+
+      // let input = prompt("Enter");
+
+      // const check = (input) => {
+      //   let string = input[0].toUpperCase() + input.slice(1);
+      //   return string;
+      // };
+
+      // console.log(check(input))
+
+      let input = prompt("Enter");
+
+      const check = (input) => {
+        let second = input.slice(1);
+        let string = input[0].toUpperCase() + second.toLowerCase();
+        return string;
+      };
+
+      console.log(check(input));
+
+      //  arrow function dont get hoisted
+      // one more function type is remain
+    </script>
+  </head>
+  <body></body>
+</html>

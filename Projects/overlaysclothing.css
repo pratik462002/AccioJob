@@ -1,0 +1,347 @@
+
+
+.roundbar {
+  border-radius: 50px;
+  background-color: rgb(255, 255, 255);
+}
+.navbar {
+  width: 100%;
+  background-color: #f0f0f0;
+}
+
+.navbar-nav {
+  align-items: center;
+  margin: auto;
+  font-family: "Spline Sans", sans-serif;
+}
+
+.righticons {
+  display: inline-block;
+  float: right;
+}
+
+.righticons img {
+  margin: 1.5vh;
+}
+
+
+.poster {
+  
+  margin-top: 10px;
+  width: 100%;
+  height: 653px;
+  background: url(/Projects/ImageOverlays/Group\ 712.png); 
+  /* background: linear-gradient(91.02deg, #AFAFAF 8.84%, #FFFFFF 68.81%, #DEDED8 98.27%);
+   */
+   background-size: 100%;
+  
+}
+
+
+.maintext h1 {
+  font-size: 150px;
+  font-family: "Bebas Neue", cursive;
+  line-height: 100%;
+  width: auto;
+}
+
+.nowornever {
+  padding: 15vh 0 0 10vh;
+}
+
+.nowornever span {
+  color: white;
+}
+
+.maintext p {
+  font-family: "Spline Sans", sans-serif;
+  opacity: 0.7;
+  margin: 0 0 0 10vh;
+}
+
+.line1 {
+  font-style: normal;
+
+  font-size: 50px;
+  line-height: 55px;
+  padding-top: 1vh;
+}
+.line1 span {
+  font-weight: bold;
+}
+
+.line2 {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 28px;
+  line-height: 32px;
+  padding-top: 2vh;
+}
+
+.line2 span {
+  font-weight: bold;
+}
+.poster button {
+  font-family: "Spline Sans", sans-serif;
+  font-weight: bold;
+  font-size: 35px;
+  line-height: 42px;
+  margin: 10vh;
+  padding: 3vh 8vh;
+  border-radius: 20vh;
+}
+
+.title-first-cards{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2vh;
+  font-family: "Spline Sans", sans-serif;
+  font-size: 20px;
+  color: rgba(0, 0, 0, 0.64);
+}
+
+.hot-products span{
+  font-size: 25px;
+  color: black;
+ 
+}
+
+.card{
+  border: none;
+  width: ;
+  border-radius: 2.25rem !important ;
+  box-shadow: 1px 0px 31px rgba(0, 0, 0, 0.19);
+  
+}
+
+
+.card .btn{
+  float: right;
+  border-radius: 2rem;
+  text-transform: capitalize;
+  background-color: #FF3737;
+  color: white;
+  font-weight: 510;
+  font-family: "Spline Sans", sans-serif;
+  font-size: .8rem;
+  padding: 1vh 4vh;
+  margin-top: 2vh;
+  line-height: normal;
+}
+
+.card-title{
+  font-family: "Spline Sans", sans-serif;
+  font-size: 1.2rem;
+  font-weight: normal;
+}
+
+.price{
+  color: #FF3737;
+  font-weight: bold;
+}
+
+.price span{
+  color: black;
+  opacity: .5;
+  font-weight: normal;
+  text-decoration: line-through;
+}
+
+.poster2 {
+  
+  margin-top: 20px;
+  width: 100%;
+  height: 653px;
+  background: url(/Projects/ImageOverlays/Group\ 72.png); 
+  /* background: linear-gradient(91.02deg, #AFAFAF 8.84%, #FFFFFF 68.81%, #DEDED8 98.27%);
+   */
+   background-size: 100%;
+  
+}
+
+.text img{
+  margin: 13vh 0 0 13vh;
+}
+
+.text p{
+  font-family: "Spline Sans", sans-serif;
+  font-size: 1.9rem;
+  margin-top: 0%;
+  margin-left: 13vh;
+  color: white;
+}
+
+.text span{
+  font-weight: bold;
+}
+
+.text button{
+  font-family: "Spline Sans", sans-serif;
+  font-weight: bold;
+  font-size: 35px;
+  line-height: 42px;
+  margin: 5vh 0 0 13vh;
+  padding: 3vh 8vh;
+  border-radius: 20vh;
+}
+
+
+
+.poster3 {
+  
+  margin-top: 20px;
+  width: 100%;
+  height: 653px;
+  background: url(/Projects/ImageOverlays/Group\ 70.png); 
+  /* background: linear-gradient(91.02deg, #AFAFAF 8.84%, #FFFFFF 68.81%, #DEDED8 98.27%);
+   */
+   background-size: 100%;
+  
+}
+
+.text3 h1{
+  font-family: "Bebas Neue", cursive;
+  text-align: center;
+  font-size: 140px;
+  color: white;
+  padding-top: 25vh;
+}
+
+
+
+.text3 p{
+  font-family: "Spline Sans", sans-serif;
+  font-size: 1.8rem;
+  margin-top: 0%;
+  text-align: center;
+  color: white;
+}
+
+.aswellas{
+  color: #FFC400;
+}
+
+.trybtn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+
+}
+
+.buttonmen{
+  font-family: "Spline Sans", sans-serif;
+  font-size: 1.5rem;
+  font-weight: bold;
+  background-color: #ffffff;
+  border-radius: 20vh;
+  border: none;
+  text-transform: uppercase;
+  margin: 1rem;
+  padding: 1rem 3rem;
+  line-height: normal;
+}
+.buttonwomen{
+  font-family: "Spline Sans", sans-serif;
+  font-size: 1.5rem;
+  font-weight: bold;
+  background-color: #FFC400;
+  border-radius: 20vh;
+  border: none;
+  text-transform: uppercase;
+  margin: 1rem;
+  padding: 1rem 2rem;
+  line-height: normal;
+}
+
+.poster4 {
+  
+  margin-top: 20px;
+  width: 100%;
+  height: 653px;
+  background: url(/Projects/ImageOverlays/Group\ 73.png); 
+  /* background: linear-gradient(91.02deg, #AFAFAF 8.84%, #FFFFFF 68.81%, #DEDED8 98.27%);
+   */
+   background-size: 100%;
+  
+}
+
+.poster4 h1{
+  font-family: "Bebas Neue", cursive;
+  margin-left: 15vh;
+  font-size: 110px;
+  color: rgb(0, 0, 0);
+  padding-top: 20vh;
+  text-shadow: 4px 2px 0px rgba(255, 255, 255, 0.84);
+}
+.freedelivery{
+  list-style: none;
+  margin: 5vh 15vh;
+}
+
+.freedelivery img{
+  margin-right: 8vh;
+  /* margin-bottom: 2vh; */
+}
+.freedelivery{
+  font-family: "Spline Sans", sans-serif;
+  font-size: 1.6rem;
+  letter-spacing: 0.02em;
+  font-weight: 500;
+}
+
+.freedelivery li{
+  margin-bottom: 3vh;
+}
+
+
+footer{
+  font-family: "Spline Sans", sans-serif;
+  background: #F2F2F2;
+  margin: 10vh 0 0 0;
+  padding: 4rem 0 3rem 0;
+  font-size: 1rem;
+}
+
+.first-section{
+  margin-left: 10vh;
+
+}
+.first-section h2{
+  font-family: "Be Vietnam Pro", sans-serif;
+  letter-spacing: 10%;
+  line-height: normal;
+  font-weight: 500;
+  margin-bottom: 2rem;
+}
+
+.first-section p{
+  opacity: .7;
+  letter-spacing: 5%;
+  margin-left: 13px;
+}
+
+.input-group input,button{
+  border-radius: 50rem;
+  padding: .5rem;
+  margin-left: 13px;
+}
+
+
+.social-media-icons{
+margin-left: 13px;
+}
+
+.font-weight-bold{
+  opacity: 1;
+  font-weight: bold;
+}
+
+
+
+
+font-family: "Be Vietnam Pro", sans-serif;
+font-family: "Bebas Neue", cursive;
+font-family: "Oswald", sans-serif;
+font-family: "Roboto", sans-serif;
+font-family: "Spline Sans", sans-serif;

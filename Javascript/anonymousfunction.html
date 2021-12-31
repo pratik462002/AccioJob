@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS Return</title>
+    <script>
+      //   let x = function (a, b) {
+      //     console.log("sum", a + b);
+      //   };
+      //   x(2, 3);
+
+      //   let x = function (a, b) {
+      //     return a + b;
+      //   };
+      //   console.log(x(2, 3));
+
+      //   //   take input from user
+
+      //   let x = prompt("Enter no");
+      //   let num=parseInt(x)
+      //   no(num)
+
+      //   function no(a){
+      //       if (condition) {
+
+      //       }
+      //   }
+
+      // let arr = [] //object
+
+      //     let j=0;
+      //     function check(num)
+      //     {
+      //         for(let i=1;i<=num;i++)
+      //         {
+      //             if(i%3==0 && i%5==0)
+      //             {
+      //                 arr[j]=i
+      //                 j++
+      //             }
+
+      //         }
+      //         return arr
+
+      //     }
+
+      //     let input1 = prompt("Number1:")
+      //     console.log(check(input1))
+
+   
+      let arr = [];
+
+      let j = 0;
+      function check(num) {
+        for (let i = 0; i <= num; i++) {
+          if (i % 3 == 0 && i % 5 == 0) {
+            arr[j] = i;
+            j++;
+          }
+          return arr;
+        }
+      }
+
+      let input = prompt("Number");
+      console.log(check(input));
+
+    </script>
+  </head>
+  <body></body>
+</html>
