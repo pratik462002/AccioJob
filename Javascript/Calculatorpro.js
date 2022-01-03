@@ -1,6 +1,6 @@
 let displayxyz = document.getElementById("display");
 
-// let buttonxyz= Array.from(document.getElementsByClassName("btn"))
+ let buttonxyz= Array.from(document.getElementsByClassName("btn"))
 
 // function clickingxyz(btnxyz){
 //     btnxyz.addEventListener("click",(xyz)=>{

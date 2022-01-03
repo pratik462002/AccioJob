@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SIPCalculator</title>
+    <link rel="stylesheet" href="SIPcalculator.css" />
+    <!-- Google Fonts  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&family=Bebas+Neue&family=Oswald:wght@400;500&family=Roboto:wght@400;500;700&family=Spline+Sans:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <!-- bootstrap cdn -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box">
+        <div class="row">
+          <div class="col-lg-6 part1">
+            <h3 class="Maintext">Monthly SIP Calculator</h3>
+            <p>I would like to invest per month</p>
+            <input type="number" placeholder="Enter your amount " id="amount" />
+            <p>For Time Period</p>
+            <input type="number" placeholder="For how much years " id="time" />
+            <p>Expected Return</p>
+            <input type="number" placeholder="Enter Your return " id="return"/> 
+            <button id="calculate" type="button" value="=" onclick="calculate()">Calculate →</button>
+          </div>
+          <div class="col-lg-6">
+            <div class="box2">
+              <div class="investedmoney">
+                <p>Invested Money</p>
+                <div id="totalmoney"></div>
+              </div>
+              <div class="welth">
+                <p>Wealth Created</p>
+                <h2 id="compoundedmoney">556454</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <script src="SIPcalculator.js"></script>
+  </body>
+</html>

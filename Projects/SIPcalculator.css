@@ -1,0 +1,68 @@
+ 
+.container{
+    margin-top: 20vh;
+}
+
+
+.box{ 
+    box-shadow: 0px 0px 26px rgba(0, 0, 0, 0.17);
+    border-radius: 15px;
+    margin: 0 20%;
+    padding: 2rem;
+}
+
+.col-lg-6{
+  
+}
+.maintext{
+    font-family: "Spline Sans", sans-serif; 
+    font-weight: bold;
+}
+.part1 p{
+    margin-top: 18px;
+    margin-bottom: 5px;
+    
+}
+
+.part1 button{
+    margin-top: 8px;
+    width: 250px;
+    border-radius: 5px;
+    border-color: ;
+    background-color: #212121;
+    color: white;
+    text-transform: uppercase;
+    line-height: normal;
+    text-align: start;
+    padding: 5px;
+}
+
+.part1 input{
+    width: 250px;
+    border-radius: 5px;
+    border: 2px solid;
+}
+
+.box2{
+    background-color: #212121;
+    color: white;
+    height: 100%;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 0px 0px 26px rgba(0, 0, 0, 0.17);
+}
+
+.box2 p{
+    padding-top: 15%;
+    padding-bottom: 5px;
+    line-height: normal;
+    margin: 0;
+    
+}
+
+
+/* font-family: "Be Vietnam Pro", sans-serif;
+font-family: "Bebas Neue", cursive;
+font-family: "Oswald", sans-serif;
+font-family: "Roboto", sans-serif;
+font-family: "Spline Sans", sans-serif; */
