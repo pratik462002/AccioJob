@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Events</title>
+    <style>
+        input{
+               width: 150px;
+               border: blue solid 2px;
+               border-radius: 5px;
+            
+        }
+    </style>
+    <script>
+    
+      //any action is call events
+      function abc() {
+        console.log('abc')
+        // alert ('this is onclick event')
+        // document.getElementById("input1").style.backgroundColor = "red";
+        // let y = document.getElementById("input1").value;
+        // console.log(y);
+
+
+      }
+    </script>
+  </head>
+  <body>
+    <input
+      type="text"
+      type="text"
+      placeholder="Enter any string"
+      onkeypress="abc()"
+      id="input1"
+    />
+  </body>
+</html>
+

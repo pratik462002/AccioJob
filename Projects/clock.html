@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>clock</title>
+    <style>
+      * {
+        background-color: #272B2D;
+      }
+      div {
+        color: white;
+        font-size: 50px;
+        text-align: center;
+        border-radius: 5vh;
+        border:#272B2D 2px solid;
+        background: #272B2D;
+        margin: 13vh 18vh;
+        box-shadow: 0px 0px 25px rgba(255, 255, 255, 0.07);
+        
+      }
+      h1{
+          margin-top: 0;
+          background: #272B2D;
+          
+      }
+      h2{
+          margin-bottom: 1vh;
+          background: #272B2D;
+          
+      }
+    </style>
+  </head>
+  <body onload="showTime()">
+    <div class="text">
+      <h2>Digital Clock</h2>
+      <h1></h1>
+    </div>
+
+    <script>
+      function showTime() {
+        var d = new Date();
+        var h = d.getHours();
+        var m = d.getMinutes();
+        var s = d.getSeconds();
+        var session = "AM";
+        if (h > 12) {
+          h = h - 12;
+          session = "PM";
+        }
+        if (h == 12) {
+          h = 12;
+          session = "AM";
+        }
+
+        h = h < 10 ? "0" + h : h;
+        m = m < 10 ? "0" + m : m;
+        s = s < 10 ? "0" + s : s;
+        var time = h + " : " + m + " : " + s + " " + session;
+
+        document.getElementsByTagName("h1")[0].innerText = time;
+        setTimeout(showTime, 1000);
+      }
+    </script>
+  </body>
+</html>
