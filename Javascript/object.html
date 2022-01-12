@@ -7,16 +7,80 @@
     <title>object</title>
 
     <script>
-      // let pratikdeatils=['pratik','india','danapur']
+      // let souravDetails = ['Sourav', 'India', 'Web Dev']
 
-      let pratikdeatils = {
-        name: "pratik",
-        country: 255,
-        course: "web dev",
+      /*
+        OBJECTS
+        - Collection of elements, 'NAMED' indices
+        - key and value pair
+      */
+
+      let souravDetails = {
+        name: "Sourav",
+        country: "India",
+        course: "Web Dev",
       };
-      console.log(
-        pratikdeatils["name"] + pratikdeatils.country + pratikdeatils["course"]
-      );
+
+      // let monalisaDetails = {
+      //   'name': 'Monalisa',
+      //   'country': 'India',
+      //   'course': 'FE Dev'
+      // }
+
+      // console.log(Object.keys(monalisaDetails))
+      // console.log(Object.values(monalisaDetails))
+
+      // console.log(souravDetails['name'] + ' from ' + souravDetails['country'] + ' is studying ' + souravDetails['course'])
+      // console.log(monalisaDetails['name'] + ' from ' + monalisaDetails['country'] + ' is studying ' + monalisaDetails['course'])
+
+      // Accessing the object values using keys - 2 methods
+      // console.log(souravDetails['name'])
+      // console.log(souravDetails.course)
+
+      // let arr = [1, 2, 5];
+      // souravDetails.techstack = "mern";
+      // console.log(souravDetails);
+
+      // let pratikDeatils={
+      //   name={
+      //     firstName='Pratik',
+      //     middleName='Marotrao',
+      //     lastName='Mirchapure',
+      //   },
+      //   isGraduated=false,
+      //   hobbies=['chess','reading','cricket'],
+      //   noOfCompaniesApplied=2,
+      // }
+
+      let pratik = {
+        batch: "Batch 11",
+        course: "FE Dev",
+        place: "india",
+        friends: ["ram", "sham", "vedant"],
+      };
+
+      console.log(Object.entries(pratik));
+
+      // for in itreting throung object
+      for (x in pratik) {
+        console.log(x + ":" + pratik[x]);
+      }
+      // for (x in pratik) {
+      //   console.log(x);
+      // }
+
+      // console.log(this)
+
+      // for of
+      // for (x of pratik.friends) {
+      //   console.log(x);
+      // }
+
+      // for (x of pratik.batch) {
+      //   console.log(x);
+      // }
+
+      
     </script>
   </head>
   <body></body>

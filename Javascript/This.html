@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>this</title>
+    <script>
+      //   let pratik = {
+      //     batch: "Batch 11",
+      //     course: true,
+      //     place: "india",
+      //     friends: ["ram", "sham", "vedant"],
+
+      //     xyz:(name) =>{
+      //       console.log("Hi " + name);
+      //     },
+      //   };
+      //   pratik.xyz("Pratik")
+
+      //   properties or keys - batch ,course,etc
+
+      // method xyz
+
+      // let pratik={
+      //     firsName:'Pratik',
+      //     lastName:'Mirchapure',
+      //     CGPA:8.87,
+      //     GPA:9.21,
+      //     display:()=>{
+      //         console.log(pratik.firsName+' '+pratik.lastName)
+      //     }
+      // }
+      // pratik.display()
+
+      //   let pratik = {
+      //     firsName: "Pratik",
+      //     lastName: "Mirchapure",
+      //     CGPA: 8.87,
+      //     GPA: 9.21,
+      //     display: function () {
+      //       console.log(this.firsName + " " + this.lastName);
+      //     },
+      //   };
+      //   pratik.display();
+
+      //   //    this.alert('Hi')
+
+      //   // this did not work in arrow function
+
+      //   let pratik = {
+      //     firsName: "Pratik",
+      //     lastName: "Mirchapure",
+      //     CGPA: 8.87,
+      //     GPA: 9.21,
+      //     display: function () {
+      //       console.log(this.firsName + " " + this.lastName);
+      //     },
+      //   };
+
+      // function checkPrime(number) {
+      // if (number <= 1) {
+      //     return false;
+      // } else {
+      //     for (let i = 2; i < number; i++) {
+      //     if (number % i == 0) {
+      //         return false;
+      //     }
+      //     }
+      //     return true;
+      // }
+      //  console.log(checkPrime(49))
+
+      //   let obj = {
+      //     fname: "anirban",
+      //     lname: "ghosh",
+      //     third: [1, 2, 3, 4, 5, 6, 7, 8, 9, 71, 86, 11, 12, 13, 14, 15, 16],
+      //     display: function () {
+      //       for (let i = 0; i < this.third.length; i++) {
+      //         for (let j = 2; j < this.third[j]; j++) {
+      //           if (this.third[j] % i == 0) {
+      //             console.log(this.third[j]);
+      //           }
+      //         }
+      //       }
+      //     },
+      //   };
+      //   obj.display();
+
+      //     let pratik={
+      //         firstName='Pratik',
+      //         latsName='Mirchapure',
+      //         arr:[1,2,3,4,5,25,15,15,485,474,22,5847,23,45,456],
+      //         display: function(){
+      //           for (let i = 0; i < this.arr.length; i++) {
+      //           if (this.arr[i] % i != 0) {
+      //             console.log(this.arr[i]);
+      //           }
+      //         }
+      //     };
+
+      //    pratik.display();
+
+      //   const arr = [34, 56, 3, 56, 4, 343, 68, 56, 34, 87, 8, 45, 34];
+      //   const isPrime = (n) => {
+      //       var ans=[]
+      //     if (n === 1) {
+      //       return false;
+      //     } else if (n === 2) {
+      //       return true;
+      //     } else {
+      //       for (let x = 2; x < n; x++) {
+      //         if (n % x === 0) {
+      //           return false;
+      //         }
+      //       }
+      //       ans.push[n]
+      //       return ans
+      //     }
+      //   };
+      // //   const filterPrime = (arr) => {
+      // //     const filtered = arr.filter((el) => !isPrime(el));
+      // //     return filtered;
+      // //   };
+      //   console.log(isPrime(arr));
+
+      //   function sumPrimes(num) {
+      //     //Produce an array containing all number of to and including num
+      //     let numArray = [];
+      //     for (let i = 1; i <= num; i++) {
+      //       numArray.push(i);
+      //     }
+
+      //     //Remove non-prime numbers from the array
+      //     numArray.map((number) => {
+      //       for (let i = 2; i < number; i++) {
+      //         if (number % i === 0) {
+      //           let index = numArray.indexOf(number);
+      //           return numArray.splice(index, 1);
+      //         }
+      //       }
+      //     });
+
+      //     return numArray;
+      //   }
+
+      //   sumPrimes(10);
+      //   let pratik = {
+      //     firsName: "Pratik",
+      //     lastName: "Mirchapure",
+      //     CGPA: 8.87,
+      //     GPA: 9.21,
+      //     display: function () {
+      //       console.log(this.firsName + " " + this.lastName);
+      //     },
+      //   };
+      //   pratik.display();
+
+      // let pratik = {
+      //   firsName: "Pratik",
+      //   lastName: "Mirchapure",
+      //   CGPA: 8.87,
+      //   GPA: 9.21,
+      //   // a: [5, 9, 63, 29, 35, 6, 55, 23],
+      //   display: function isPrime(item) {
+      //     {
+      //       var a = [5, 9, 63, 29, 35, 6, 55, 23];
+      //       var prime = [];
+      //       var identifier = item / 2;
+      //       for (var j = 2; j <= identifier; j++) {
+      //         if (item % j == 0) {
+      //           // modulous
+      //           return false;
+      //         }
+      //       }
+      //       return true;
+      //     }
+      //     for (var index = 0; index < a.length; index++) {
+      //       if (isPrime(a[index])) {
+      //         prime.push(a[index]);
+      //       }
+      //     }
+      //     console.log(prime);
+      //   },
+      // };
+      // pratik.display();
+
+      // var a = [5, 9, 63, 29, 35, 6, 55, 23];
+      // var prime = [];
+
+      // function isPrime(item) {
+      //   var identifier = item / 2;
+      //   for (var j = 2; j <= identifier; j++) {
+      //     if (item % j == 0) {
+      //       // modulous
+      //       return false;
+      //     }
+      //   }
+      //   return true;
+      // }
+      // for (var index = 0; index < a.length; index++) {
+      //   if (isPrime(a[index])) {
+      //     prime.push(a[index]);
+      //   }
+      // }
+
+      // console.log(prime);
+
+      //   const arr = [34, 56, 3, 56, 4, 343, 68, 56, 34, 87, 8, 45, 34];
+      //   const isPrime = (n) => {
+      //     if (n === 1) {
+      //       return false;
+      //     } else if (n === 2) {
+      //       return true;
+      //     } else {
+      //       for (let x = 2; x < n; x++) {
+      //         if (n % x === 0) {
+      //           return false;
+      //         }
+      //       }
+      //       return true;
+      //     }
+      //   };
+      //   const filterPrime = (arr) => {
+      //     const filtered = arr.filter((el) => !isPrime(el));
+      //     return filtered;
+      //   };
+      //   console.log(filterPrime(arr));
+
+      // let obj = {
+      //   question: "To check weather a number is primary or not",
+      //   submittedBy: "Shivam Dhoundiyal",
+      //   arr: [
+      //     2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20,
+      //     21, 22, 23, 24, 25, 88, 77, 73, 93, 31,
+      //   ],
+      //   func: function () {
+      //     for (let i = 0; i < this.arr.length; i++) {
+      //       let sum = 0;
+      //       for (let j = 2; j <= this.arr[i]; j++) {
+      //         if (this.arr[i] % j == 0) sum++;
+      //       }
+      //       if (sum < 2) {
+      //         this.primeNumberArr.push(this.arr[i]);
+      //       }
+      //     }
+      //   },
+      //   primeNumberArr: [],
+      // };
+      // objects.entries(obj);
+      // obj.func();
+
+
+    </script>
+  </head>
+  <body></body>
+</html>

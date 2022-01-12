@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style></style>
+  </head>
+  <body>
+    <div class="container">
+      <div></div>
+      <div class="circle">1</div>
+      <div class="circle">2</div>
+      <div class="circle">3</div>
+      <div class="circle">4</div>
+
+      <button class="btn" id="prev">prev</button>
+      <button class="btn" id="next">next</button>
+    </div>
+
+    <script>
+      const prev = document.getElementById("prev");
+      const next = document.getElementById("next");
+      const circles = document.querySelectorAll(".circle");
+
+      let currentActive = 1;
+      let numberOfCircle = circles.length;
+
+      next.addEventListener("click", () => {
+        currentActive++;
+
+        if (currentActive > numberOfCircle) {
+          currentActive = numberOfCircle;
+        }
+        console.log(currentActive);
+        enableDisable();
+      });
+
+      prev.addEventListener("click", () => {
+        currentActive--;
+
+        if (currentActive< 1) {
+          currentActive = 1;
+        }
+        console.log(currentActive);
+        enableDisable();
+      });
+
+      function enableDisable() {
+        if (currentActive == 1) {
+          prev.disabled = true;
+        } else if (currentActive == numberOfCircle) {
+          next.disabled = true;
+        } else {
+          prev.disabled = false;
+          next.disabled = false;
+        }
+      }
+
+      function updateCSS(){
+          for(var i=0;i<numberOfCircle;i++){
+              const circle=circles[i]
+
+              if (i<currentActive) {
+                  circle.classList.add("active")
+              }
+              else{
+                  circle.classList.remove("active")
+              }
+          }
+
+          const  activexyz=document.querySelectorAll(".active")
+
+          const widthxyz=(activexyz.)
+
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <script>
+      function major(arr, n) {
+        //your code here
+        arr.sort((a, b) => a - b);
+        return arr[Math.floor(n / 2)];
+      }
+      //    module.exports = major;
+      var arr = [2, 5, 2, 4, 2];
+      console.log(major(arr, arr.length));
+    </script>
+  </head>
+  <body></body>
+</html>

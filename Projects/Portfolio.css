@@ -1,0 +1,171 @@
+@font-face {
+  font-family: "Product Sans";
+  src: url(PortfolioFonts/product-sans/Product\ Sans\ Regular.ttf);
+  /* src: url(PortfolioFonts/product-sans/Product\ Sans\ Bold.ttf); */
+  /* font-weight: normal; */
+}
+@font-face {
+  font-family: "Product Sans Bold";
+  src: url(PortfolioFonts/product-sans/Product\ Sans\ Bold.ttf);
+}
+
+@font-face {
+  font-family: "Myride Pro";
+  src: url(PortfolioFonts/myriad-pro-apple-like-products/MYRIADPRO-REGULAR.OTF);
+}
+
+@font-face {
+  font-family: "Dlirium1";
+  src: url(PortfolioFonts/fty-delirium-ncv-font/DeliriumNcv-Vm5e.ttf);
+}
+@font-face {
+  font-family: "Dlirium2";
+  src: url(PortfolioFonts/fty-delirium-ncv-font/DeliriumNeonNcv-J1AK.ttf);
+}
+
+body {
+  font-family: "Product Sans";
+  background: #0f0f0f;
+  user-select: none;
+}
+
+.navbar {
+  margin-top: 1.5rem;
+  background-color: #0f0f0f;
+}
+.navbar-nav a {
+  margin-left: 1rem;
+  color: white;
+  font-size: 1rem;
+  font-family: "Myride Pro";
+  font-weight: 400;
+}
+
+.navbar-nav span {
+  color: #64ffda;
+}
+
+.righticons {
+  padding: 2px;
+  display: inline-block;
+  background: #64ffda;
+  border-radius: 33px;
+  float: right;
+  margin-left: 1.5rem;
+}
+
+.righticons img {
+  margin: 4px;
+}
+.name {
+  position: relative;
+}
+
+.hello {
+  position: absolute;
+  margin-left: 5rem;
+  /* letter-spacing: 0.01em; */
+  font-family: "Dlirium1";
+  font-size: 700px;
+  line-height: 700px;
+  color: black;
+}
+
+.hello span {
+  font-family: "Dlirium2";
+  -webkit-text-stroke: 3px #64ffda;
+  color: transparent;
+}
+.hello span:hover {
+  -webkit-text-stroke: 3px #ffffff;
+}
+
+.name {
+  font-family: "Product Sans Bold";
+  color: white;
+  font-size: 200px;
+  line-height: 200px;
+  margin-left: 7rem;
+  padding-top: 5rem;
+  width: fit-content;
+}
+
+.name p {
+  margin-bottom: 0;
+}
+
+.line {
+  position: absolute;
+  top: 340px;
+}
+.UI {
+  font-family: "Product Sans";
+  font-size: 30px;
+  margin-left: 4.5rem;
+  line-height: 30px;
+  color: #64ffda;
+}
+
+.about {
+  margin-top: 10rem;
+  color: white;
+  font-family: "Product Sans";
+  position: relative;
+}
+.abouttitle {
+  font-family: "Product Sans Bold";
+  margin-left: 2rem;
+  font-size: 150px;
+  color: #64ffda;
+}
+
+.abouttitle span {
+  color: black;
+}
+.circle {
+  position: absolute;
+  height: 44px;
+  width: 44px;
+  background-color: white;
+  border-radius: 50%;
+  top: 107px;
+  left: 15.7rem;
+}
+
+.aboutdescription {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 25px;
+  line-height: 50px;
+  width: 50%;
+  text-align: left;
+  margin-left: 10rem;
+}
+
+.about ul {
+  display: inline-flex;
+  font-size: 25px;
+  color: #64ffda;
+  max-width: 40%;
+  flex-wrap: wrap;
+  margin-left: 12rem;
+}
+
+.about li {
+  margin-right: 8rem;
+  margin-top: 2rem;
+}
+
+.bootstrap {
+  padding-right: 0.4rem;
+}
+
+
+/*
+fonts
+font-family: "Product Sans";
+font-family: "Product Sans Bold";
+font-family: "Myride Pro";
+font-family: "Dlirium1";
+font-family: "Dlirium2"; 
+*/
