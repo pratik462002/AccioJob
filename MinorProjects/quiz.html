@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        background-color: #b8b8b8;
+        background-color: ;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        overflow: hidden;
+        margin: 0;
+      }
+
+      .quiz-container {
+        background-color: white;
+        border-radius: 10px;
+        width: 600px;
+        overflow: hidden;
+      }
+      .quiz-header {
+        padding: 4rem;
+      }
+      h2 {
+        padding: 1rem;
+        text-align: center;
+        margin: 0;
+      }
+      ul {
+        list-style: none;
+      }
+      ul li {
+        font-size: 1.2rem;
+        margin: 1rem 0;
+      }
+
+      button {
+        background-color: purple;
+        padding: 15px;
+        width: 600px;
+        border: none;
+        color: white;
+        font-size: 1.2rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="quiz-container" id="quiz-container">
+      <div class="quiz-header">
+        <h2 is="question">question</h2>
+        <ul>
+          <li>
+            <input type="radio" name="answer" id="a" class="answer" />
+            <label for="a" id="a_text">Option A</label>
+          </li>
+          <li>
+            <input type="radio" name="answer" id="b" class="answer" />
+            <label for="b" id="b_text">Option B</label>
+          </li>
+          <li>
+            <input type="radio" name="answer" id="c" class="answer" />
+            <label for="c" id="c_text">Option C</label>
+          </li>
+          <li>
+            <input type="radio" name="answer" id="d" class="answer" />
+            <label for="d" id="d_text">Option D</label>
+          </li>
+        </ul>
+      </div>
+      <button id="submit">Submit</button>
+    </div>
+    <script>
+      const quizData = [
+        {
+          question: "Which language runs in a web browser?",
+          a: "Java",
+          b: "C",
+          c: "Python",
+          d: "JavaScript",
+          correct: "d",
+        },
+        {
+          question: "What does CSS stand for?",
+          a: "Central Style Sheets",
+          b: "Cascading Style Sheets",
+          c: "Cascading Simple Sheets",
+          d: "Cars SUVs Sailboats",
+          correct: "b",
+        },
+        {
+          question: "What does HTML stand for?",
+          a: "Hypertext Markup Language",
+          b: "Hypertext Markdown Language",
+          c: "Hyperloop Machine Language",
+          d: "Helicopters Terminals Motorboats Lamborginis",
+          correct: "a",
+        },
+        {
+          question: "What year was JavaScript launched?",
+          a: "1996",
+          b: "1995",
+          c: "1994",
+          d: "none of the above",
+          correct: "b",
+        },
+      ];
+
+      const quiz = document.getElementById("quiz");
+      const answerE1s = document.querySelectorAll(".answer");
+      const questionE1 = document.getElementById("question");
+
+      const submitBtn = document.getElementById("submit");
+
+      const a_text = document.getElementById("a_text");
+      const b_text = document.getElementById("b_text");
+      const c_text = document.getElementById("c_text");
+      const d_text = document.getElementById("d_text");
+
+      let score = 0;
+
+      let currentQuestion = 0;
+
+      function loadQuiz() {
+        const currentQuizData = quizData[currentQuestion];
+        questionE1.innerText = currentQuizData.question;
+        a_text.innerText = currentQuizData.a;
+        b_text.innerText = currentQuizData.b;
+        c_text.innerText = currentQuizData.c;
+        d_text.innerText = currentQuizData.d;
+      }
+      loadQuiz();
+    </script>
+  </body>
+</html>

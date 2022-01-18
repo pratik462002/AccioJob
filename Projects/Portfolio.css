@@ -160,7 +160,172 @@ body {
   padding-right: 0.4rem;
 }
 
+.experience {
+  color: white;
+  font-family: "Product Sans Bold";
+  font-size: 150px;
+  margin-left: 28rem;
+}
 
+.maincontent {
+  display: flex;
+  margin-left: 5rem;
+  color: white;
+}
+
+.companyname {
+  /* margin: 50px 50px 50px 50px; */
+  font-size: 20px;
+  border-left: 5px #64ffda solid;
+  /* border-top-left-radius: 10px; */
+}
+
+.companyname div {
+  margin: 5px 0 5px 0;
+  background-color: black;
+  padding: 10px 150px 10px 10px;
+  border-radius: 0px 40px 40px 0;
+}
+
+.GraphicDesigner {
+  font-family: "Product Sans Bold";
+  font-size: 30px;
+  margin-top: 10px;
+
+  line-height: 100%;
+}
+
+.National {
+  color: #64ffda;
+  font-family: "Product Sans";
+  font-size: 20px;
+  align-items: center;
+  line-height: 100%;
+  margin-left: 10px;
+}
+
+.ExperienceSection {
+  margin-left: 50px;
+}
+.dateOfJoin {
+  font-size: 20px;
+  opacity: 0.6;
+}
+
+.ExperienceSection ul {
+  font-size: 25px;
+  width: 800px;
+}
+.projects {
+  margin-top: 5rem;
+  position: relative;
+}
+.projecttitle {
+  
+  font-size: 150px;
+  color: #64ffda;
+  font-family: "Product Sans Bold";
+  margin-left: 3rem;
+}
+
+.cards1 {
+  display: flex;
+}
+
+.project1 {
+  background-color: black;
+  margin-left: 3rem;
+  border-radius: 20px;
+  padding: 3rem;
+}
+.icons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.folder {
+  height: 50px;
+}
+
+.figma {
+  height: 40px;
+}
+.projectname {
+  display: flex;
+  color: white;
+  margin-top: 2rem;
+}
+
+.projectnametitle {
+  font-family: "Product Sans Bold";
+  font-size: 25px;
+}
+
+.projectnamediscription {
+  font-size: 15px;
+  width: 350px;
+  font-weight: 300;
+
+}
+.project2 {
+  background-color:black;
+  margin-left: 1rem;
+  border-radius: 20px;
+  padding: 3rem;
+  
+}
+.project22 {
+  background-color:#272727;
+  margin-left: 1rem;
+  border-radius: 20px;
+  padding: 3rem;
+  
+}
+.projectnamediscription2{
+  font-size: 15px;
+  width: 400pxpx;
+  font-weight: 300;
+
+}
+
+.cards2{
+  display: flex;
+  justify-content: space-around;
+  margin-top: 1rem;
+  margin-left: 0;
+}
+
+.project21 {
+  background-color:#272727;
+  margin-left: 3rem;
+  border-radius: 20px;
+  padding: 3rem;
+  
+}
+.project23 {
+  background-color:#272727;
+  margin-left: 1rem;
+  border-radius: 20px;
+  padding: 3rem;
+  margin-right: 2rem;
+  
+}
+.techuse{
+  margin-top: 1rem;
+  margin-bottom: 0;
+  font-size: 13px;
+  opacity: .45;
+}
+.circle2 {
+  position: absolute;
+  height: 44px;
+  width: 44px;
+  background-color: white;
+  border-radius: 50%;
+  top: 107px;
+  left: 14.20rem;
+}
 /*
 fonts
 font-family: "Product Sans";

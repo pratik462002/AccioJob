@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>todolist</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+
+        body{
+            background-color: #f5f5f5;
+            color: #444;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        h1{
+            color: rgb(19, 74, 175);
+            font-size: 10rem;
+            text-align: center;
+            opacity: .8;
+            margin-bottom: 1rem;
+        }
+        form{
+            
+            font-size: 2rem;
+            padding: 1rem 2rem;
+            display: block;
+        }
+
+        input{
+            border: none;
+            color: #444;
+            font-size: 2rem;
+            padding: 1rem 2rem;
+
+        }
+        .todos{
+            list-style-type: none;
+            padding: 0;
+            background-color: #ffffff;
+
+        }
+
+        .todos li{
+            border-top: 1px solid #e5e5e5;
+            cursor: pointer;
+            font-size: 1.5rem;
+            padding: 1rem 2rem;
+        }
+    </style>
+</head>
+<body>
+    <h1>DONE</h1>
+    <form action="" id="form">
+        <input type="text" name="" id="input" placeholder="Type your todo">
+        <ul class="todos">
+            <li>Unchecked</li>
+            <li>Checked</li>
+        </ul>
+    </form>
+    <!-- <small>
+        Left click to 
+    </small> -->
+
+    <script>
+        const form=document.getElementById('form')
+        const input=document.getElementById('input')
+        const todoUL=document.getElementById('todos')
+
+        const todos=[
+            {
+                text:'abc'
+            }
+        ]
+        
+    </script>
+</body>
+</html>

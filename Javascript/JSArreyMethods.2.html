@@ -56,20 +56,20 @@
 
       //
 
-      let arr = [1, 7, 9];
+      // let arr = [1, 7, 9];
 
-      let newarr = arr.filter(function (value){
-        if (value % 2 == 0) {
-          return false;
-        } else {
-          return true;
-        }
-      });
-      if (newarr.length !== arr.length){
-        console.log("Yes");
-      } else {
-        console.log("No");
-      }
+      // let newarr = arr.filter(function (value){
+      //   if (value % 2 == 0) {
+      //     return false;
+      //   } else {
+      //     return true;
+      //   }
+      // });
+      // if (newarr.length !== arr.length){
+      //   console.log("Yes");
+      // } else {
+      //   console.log("No");
+      // }
 
       // // let newarr = arr.filter(function (value, index) {
       // //   return arr.indexOf(value) == index;
@@ -149,7 +149,21 @@
 
       // flag=store Boolean
 
-      
+    let arr=[1,2,3,4,5,6,8]
+
+    let sum=0
+    arr.forEach(function(element){
+      sum+=element
+    })
+    console.log(sum)
+
+    let sum=arr.reduce((total,element)=>{
+      // console.log(total)
+      return total+element
+    })
+    console.log(sum)
+
+
     </script>
   </head>
   <body></body>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>running text</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        background-color: #1d1d1d;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+        height: 100vh;
+        overflow: hidden;
+        color: white;
+      }
+      div {
+        position: absolute;
+        bottom: 20px;
+        padding: 10px 20px;
+        font-size: 20px;
+        background: ;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 id="text">dgdhtg</h1>
+    <div>
+      <label for="speed"></label>
+      <input type="number" name="speed" id="speed" value="1" min="1" max="10" />
+    </div>
+
+    <script>
+      const textEl = document.getElementById("text");
+      const speedEl = document.getElementById("speed");
+
+      const text = "Hi, I'm Pratik";
+      let idx = 0;
+
+      let time=500/speedEl.value
+      writeText()
+      function writeText() {
+        textEl.innerHTML = text.slice(0, idx);
+        idx++;
+
+        if (idx>text.length) {
+            idx=1
+        }
+
+        setTimeout(writeText,time)
+      }
+
+      speedEl.addEventListener("input",(e)=>time=500/e.target.value)
+    </script>
+  </body>
+</html>
