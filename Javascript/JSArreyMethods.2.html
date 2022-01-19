@@ -149,21 +149,76 @@
 
       // flag=store Boolean
 
-    let arr=[1,2,3,4,5,6,8]
+      // let arr=[1,2,3,4,5,6,8]
 
-    let sum=0
-    arr.forEach(function(element){
-      sum+=element
-    })
-    console.log(sum)
+      // let sum=0
+      // arr.forEach(function(element){
+      //   sum+=element
+      // })
+      // console.log(sum)
 
-    let sum=arr.reduce((total,element)=>{
-      // console.log(total)
-      return total+element
-    })
-    console.log(sum)
+      // let sum=arr.reduce((total,element)=>{
+      //   // console.log(total)
+      //   return total+element
+      // })
+      // console.log(sum)
 
+      // let arr = [1, 7, 9];
 
+      // let newarr = arr.filter(function (value){
+      //   if (value % 2 == 0) {
+      //     return false;
+      //   } else {
+      //     return true;
+      //   }
+      // });
+
+      let inputArray = [
+        { name: "Amber", batch: "Batch 12", likesIceCream: false },
+        { name: "Pratik", batch: "Batch 12", likesIceCream: true },
+        { name: "Charan", batch: "Batch 11", likesIceCream: false },
+        { name: "Dhanashree", batch: "Batch 12", likesIceCream: true },
+        { name: "Anirban", batch: "Batch 10", likesIceCream: false },
+      ];
+
+      let arr = inputArray.filter(function (value) {
+        if (value.likesIceCream == true) {
+          return true;
+        } else {
+          return false;
+        }
+      });
+
+      let names = [];
+      arr.forEach(function (value) {
+        names.push(value.name);
+      });
+
+      console.log(names);
+
+        // arr.forEach(function (value) {
+        //   if (value == 1) {
+        //     arrnew.push(value);
+        //   }
+        // });
+        // console.log(arrnew);
+
+        // let newArr = arr.filter(function (value) {
+        //   return value === 1;
+        // });
+        // console.log(newArr)
+
+      // let arr = [456, 54, 6, 13, 6, 5];
+
+      // function abc(arr) {
+      //   let newarr = arr.sort((a, b) => a - b);
+      //   let min = newarr[0];
+      //   let max = newarr[newarr.length - 1];
+      //   let output =`${min},${max}`;
+      //   return output;
+      // }
+
+      // console.log(abc(arr));
     </script>
   </head>
   <body></body>

@@ -25,13 +25,13 @@
 
 body {
   font-family: "Product Sans";
-  background: #0f0f0f;
+  background: #121212;
   user-select: none;
 }
 
 .navbar {
   margin-top: 1.5rem;
-  background-color: #0f0f0f;
+  background-color: #121212;
 }
 .navbar-nav a {
   margin-left: 1rem;
@@ -39,6 +39,9 @@ body {
   font-size: 1rem;
   font-family: "Myride Pro";
   font-weight: 400;
+}
+.nav-link:hover{
+  color: #64ffda;
 }
 
 .navbar-nav span {
@@ -83,10 +86,10 @@ body {
 .name {
   font-family: "Product Sans Bold";
   color: white;
-  font-size: 200px;
-  line-height: 200px;
-  margin-left: 7rem;
-  padding-top: 5rem;
+  font-size: 150px;
+  line-height: 150px;
+  margin-left: 7.45rem;
+  padding-top: 8rem;
   width: fit-content;
 }
 
@@ -96,26 +99,26 @@ body {
 
 .line {
   position: absolute;
-  top: 340px;
+  top: 330px;
 }
 .UI {
   font-family: "Product Sans";
-  font-size: 30px;
-  margin-left: 4.5rem;
+  font-size: 25px;
+  margin-left: 3rem;
   line-height: 30px;
   color: #64ffda;
 }
 
 .about {
-  margin-top: 10rem;
+  margin-top: 15rem;
   color: white;
   font-family: "Product Sans";
   position: relative;
 }
 .abouttitle {
   font-family: "Product Sans Bold";
-  margin-left: 2rem;
-  font-size: 150px;
+  margin-left: 3rem;
+  font-size: 120px;
   color: #64ffda;
 }
 
@@ -124,19 +127,19 @@ body {
 }
 .circle {
   position: absolute;
-  height: 44px;
-  width: 44px;
+  height: 37px;
+  width: 37px;
   background-color: white;
   border-radius: 50%;
-  top: 107px;
-  left: 15.7rem;
+  top: 84px;
+  left: 13.9rem;
 }
 
 .aboutdescription {
   font-style: normal;
   font-weight: normal;
-  font-size: 25px;
-  line-height: 50px;
+  font-size: 23px;
+  line-height: 37px;
   width: 50%;
   text-align: left;
   margin-left: 10rem;
@@ -144,7 +147,7 @@ body {
 
 .about ul {
   display: inline-flex;
-  font-size: 25px;
+  font-size: 22px;
   color: #64ffda;
   max-width: 40%;
   flex-wrap: wrap;
@@ -163,8 +166,9 @@ body {
 .experience {
   color: white;
   font-family: "Product Sans Bold";
-  font-size: 150px;
+  font-size: 120px;
   margin-left: 28rem;
+  margin-top: 5rem;
 }
 
 .maincontent {
@@ -189,7 +193,7 @@ body {
 
 .GraphicDesigner {
   font-family: "Product Sans Bold";
-  font-size: 30px;
+  font-size: 25px;
   margin-top: 10px;
 
   line-height: 100%;
@@ -213,19 +217,27 @@ body {
 }
 
 .ExperienceSection ul {
-  font-size: 25px;
+  font-size: 20px;
   width: 800px;
 }
 .projects {
-  margin-top: 5rem;
+  margin-top: 8rem;
   position: relative;
 }
 .projecttitle {
-  
-  font-size: 150px;
+  font-size: 120px;
   color: #64ffda;
   font-family: "Product Sans Bold";
-  margin-left: 3rem;
+  margin-left: 3.5rem;
+}
+.circle2 {
+  position: absolute;
+  height: 37px;
+  width: 37px;
+  background-color: white;
+  border-radius: 50%;
+  top: 84px;
+  left: 12.5rem;
 }
 
 .cards1 {
@@ -236,7 +248,7 @@ body {
   background-color: black;
   margin-left: 3rem;
   border-radius: 20px;
-  padding: 3rem;
+  padding: 2rem;
 }
 .icons {
   display: flex;
@@ -249,7 +261,7 @@ body {
 }
 
 .figma {
-  height: 40px;
+  height: 30px;
 }
 .projectname {
   display: flex;
@@ -259,37 +271,34 @@ body {
 
 .projectnametitle {
   font-family: "Product Sans Bold";
-  font-size: 25px;
+  font-size: 20px;
 }
 
 .projectnamediscription {
   font-size: 15px;
   width: 350px;
   font-weight: 300;
-
 }
 .project2 {
-  background-color:black;
+  background-color: black;
   margin-left: 1rem;
   border-radius: 20px;
-  padding: 3rem;
-  
+  padding: 2rem;
 }
 .project22 {
-  background-color:#272727;
+  background-color: #272727;
   margin-left: 1rem;
   border-radius: 20px;
-  padding: 3rem;
-  
+  padding: 2rem;
 }
-.projectnamediscription2{
+
+.projectnamediscription2 {
   font-size: 15px;
   width: 400pxpx;
   font-weight: 300;
-
 }
 
-.cards2{
+.cards2 {
   display: flex;
   justify-content: space-around;
   margin-top: 1rem;
@@ -297,34 +306,154 @@ body {
 }
 
 .project21 {
-  background-color:#272727;
+  background-color: #272727;
   margin-left: 3rem;
   border-radius: 20px;
-  padding: 3rem;
-  
+  padding: 2rem;
 }
 .project23 {
-  background-color:#272727;
+  background-color: #272727;
   margin-left: 1rem;
   border-radius: 20px;
-  padding: 3rem;
-  margin-right: 2rem;
-  
+  padding: 2rem;
+  margin-right: 6rem;
 }
-.techuse{
+.techuse {
   margin-top: 1rem;
   margin-bottom: 0;
   font-size: 13px;
-  opacity: .45;
+  opacity: 0.45;
 }
-.circle2 {
+.viewmore {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+.viewmore button {
+  background-color: #64ffda;
+  font-family: "Product Sans Bold";
+  font-size: 20px;
+  border: none;
+  padding: 0.8rem 3rem;
+  border-radius: 30px;
+}
+
+.getintouch {
+  position: relative;
+  color: white;
+  margin-top: 8rem;
+  /* margin-left: 3.5rem; */
+}
+
+.getintouchtitle {
+  font-size: 120px;
+  font-family: "Product Sans Bold";
+  margin-left: 3rem;
+}
+.getintouchtitle span {
+  color: #64ffda;
+}
+
+.circle3 {
   position: absolute;
-  height: 44px;
-  width: 44px;
+  height: 37px;
+  width: 37px;
   background-color: white;
   border-radius: 50%;
-  top: 107px;
-  left: 14.20rem;
+  top: 5.3rem;
+  left: 31rem;
+}
+.getintouchdiscription {
+  font-size: 25px;
+  margin-left: 4rem;
+}
+.sayhello {
+  margin-left: 4rem;
+}
+
+.sayhello button {
+  background-color: #64ffda;
+  font-family: "Product Sans Bold";
+  font-size: 20px;
+  border: none;
+  margin-top: 2rem;
+  padding: 0.8rem 3rem;
+  border-radius: 30px;
+}
+
+.contact {
+  color: white;
+  margin-top: 8rem;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  padding-top: 7rem;
+}
+.contacttext {
+  margin-left: 3.7rem;
+}
+
+.contacttitle {
+  font-size: 120px;
+  font-family: "Product Sans Bold";
+  color: #64ffda;
+  line-height: 100%;
+}
+.mail {
+  font-size: 25px;
+  margin-left: 1rem;
+  margin-top: 2rem;
+  color: #64ffda;
+}
+
+.mail span {
+  color: white;
+}
+.mobileno {
+  font-size: 25px;
+  margin-left: 1rem;
+  margin-top: 2rem;
+  color: #64ffda;
+}
+
+.mobileno span {
+  color: white;
+}
+
+.socialmediaicons {
+  display: inline-block;
+  /* margin-left: 1rem; */
+  margin-top: 1.5rem;
+}
+.socialmediaicons a {
+  padding-left: 1rem;
+}
+
+.circle4 {
+  position: absolute;
+  height: 37px;
+  width: 37px;
+  background-color: white;
+  border-radius: 50%;
+  top: 10.4rem;
+  left: 10.8rem;
+}
+/* .small {
+  color: white;
+  display: flex;
+  justify-content: center;
+  font-size: 15px;
+  font-weight: 100;
+  opacity: .1;
+} */
+.mailboximage{
+  margin-right: 10rem;
+}
+
+.contactback{
+  background-color: black;
+  
 }
 /*
 fonts

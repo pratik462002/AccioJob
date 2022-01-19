@@ -73,13 +73,34 @@
 
       // try catch
 
-      console.log("abc");
-        try{
-          let x = 10;
-          let x = 15;
+      // console.log("abc");
+      //   try{
+      //     let x = 10;
+      //     let x = 15;
 
+      //   }
+      //   catch{
+
+      //   }
+
+        console.log('Start of the code')
+
+        try{
+          let a=-10
+          if (a<2) {
+            throw 'Invalid Input'
+          }
         }
-        
+        catch(error){
+          console.error(error);
+        }
+        finally{
+          console.log('This will always be executed')
+        }
+
+        console.log('end of the code')
+
+
     </script>
   </body>
 </html>

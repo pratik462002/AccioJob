@@ -6,25 +6,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <script>
-      function mincost(arr) {
-        arr.sort((a, b) => a - b);
-        let cost = 0;
+      // function mincost(arr) {
+      //   arr.sort((a, b) => a - b);
+      //   let cost = 0;
 
-        while (arr.length > 1) {
-          let first = arr.shift();
-          let second = arr.shift();
+      //   while (arr.length > 1) {
+      //     let first = arr.shift();
+      //     let second = arr.shift();
 
-          cost += first + second;
+      //     cost += first + second;
 
-          arr.push(first + second);
-          arr.sort((a, b) => a - b);
-          console.log(arr);
-        }
-        return cost;
-      }
+      //     arr.push(first + second);
+      //     arr.sort((a, b) => a - b);
+      //     console.log(arr);
+      //   }
+      //   return cost;
+      // }
+
+
+      
+
+
+      // console.log(mincost(arr));
 
       let arr = [4, 3, 2, 6];
-      console.log(mincost(arr));
+
+      let
     </script>
   </head>
   <body></body>
