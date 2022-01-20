@@ -14,14 +14,17 @@
         batch: "11",
       };
 
-      function fullname() {
-        console.log(this.firstname + " " + this.lastname);
+      //   function fullname() {
+      //     console.log(this.firstname + " " + this.lastname);
+      //   }
+
+      //   let fullnamewithscope = fullname.bind(pratik);
+      //   fullnamewithscope();
+
+      function fullname(city) {
+        console.log(this.firstname + " " + this.lastname + " " + city);
       }
-
-      let fullnamewithscope = fullname.bind(pratik);
-      fullnamewithscope();
-
-      
+      let fullnamewithscope = fullname.call(pratik, "Mumbai");
     </script>
   </body>
 </html>

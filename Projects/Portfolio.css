@@ -190,6 +190,10 @@ body {
   padding: 10px 150px 10px 10px;
   border-radius: 0px 40px 40px 0;
 }
+.clicked{
+  background-color: #64ffda !important;
+  color: black
+}
 
 .GraphicDesigner {
   font-family: "Product Sans Bold";
