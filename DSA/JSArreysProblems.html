@@ -31,12 +31,12 @@
         { name: "Amber", batch: "Batch 12", likesIceCream: false },
         { name: "Pratik", batch: "Batch 12", likesIceCream: true },
         { name: "Charan", batch: "Batch 11", likesIceCream: false },
-        { name: "Dhanashree", batch: "Batch 12", likesIceCream: true },
+        { name: "Dhanashree", batch: "Batch 11", likesIceCream: true },
         { name: "Anirban", batch: "Batch 10", likesIceCream: false },
       ];
 
       let arr = inputArray.filter(function (value) {
-        if (value.likesIceCream == true) {
+        if (value.likesIceCream == true && value.batch == "Batch 11") {
           return true;
         } else {
           return false;
@@ -48,12 +48,16 @@
         names.push(value.name);
       });
 
-
-      const para = document.createElement("p");
-      para.innerHTML = "This is a paragraph.";
-      document.getElementById("myDIV").appendChild(para);
-      
       console.log(names);
+
+      // let arr2=arr.filter(function (value) {
+      //   if (value.batch=="Batch 11") {
+      //     return true
+      //   }
+      //   else{
+      //     return false
+      //   }
+      // })
     </script>
   </body>
 </html>
