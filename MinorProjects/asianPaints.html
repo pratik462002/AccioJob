@@ -42,13 +42,13 @@
       const change = document.getElementById("change_button");
       const reset = document.getElementById("reset_button");
 
-      reset.addEventListener("click", resetblock);
-      change.addEventListener("click", colourblock);
+      reset.addEventListener("click" ,resetblock);
+      change.addEventListener("click" ,colourblock);
 
       function resetblock() {
-        for (let index = 0; index <= 9; index++) {
+        for (let index = 1; index <= 9; index++) {
           const girditem = document.getElementById(index);
-          girditem.style.backgroundColor = "transparent"
+          girditem.style.backgroundColor = "transparent";
         }
       }
 
@@ -57,9 +57,9 @@
         const colorid = document.getElementById("colour_id");
         resetblock();
         const girditem = document.getElementById(blockid.value);
-        girditem.style.backgroundColor = colorid.value
-        block_id.value=""
-        color_id.value=""
+        girditem.style.backgroundColor = colorid.value;
+        blockid.value = '';
+        colorid.value = '';
       }
     </script>
   </body>

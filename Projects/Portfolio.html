@@ -14,10 +14,8 @@
 
     <!-- External css  -->
     <link rel="stylesheet" href="Portfolio.css" />
-
   </head>
   <body>
-
     <!-- Navbar section  -->
 
     <section class="navbar0 sticky-top">
@@ -87,10 +85,17 @@
       <p class="abouttitle"><span>About</span> Me</p>
       <div class="circle"></div>
       <p class="aboutdescription">
-        Hi, I'm a software professional who works to achieve software that
-        empowers people, not just businesses. I aim to deliver scalable
-        applications and hence, insist over writing the sleek & efficient code
-        while maintaining agreement on code-maintenance. <br /><br />
+        I'm a Freelance Graphics and UI designer by passion and a third-year
+        Mechanical Engineering student. I’m the Founder & CEO of Social Pillow
+        Media, a design and management agency I started in March 2021 with
+        Vedant Deshmukh. We have worked with various startups and organizations
+        and helped them out to build their social presence. I’m also interested
+        in web development and I am currently learning HTML, CSS, and JS.
+        <br /><br />
+        I always try to do work with less energy and higher Efficiency. I am
+        always ready to have new experiences, meet new people and learn new
+        things. I find the idea of creating value for people and impacting the
+        world through my work gratifying. <br /><br />
         Here are a few technologies I've been working with recently:
       </p>
 
@@ -112,7 +117,7 @@
             <div class="ball"></div>
           </label>
 
-          <!-- <span>Switch </span> -->
+          <!-- <span> Switch </span> -->
         </div>
         <div class="experience">
           <p>Experience</p>
@@ -120,16 +125,49 @@
       </div>
       <div class="maincontent">
         <div class="companyname">
-          <div class="NEO clicked"  style="">
+          <div
+            class="NEO clicked"
+            id="Section6"
+            onclick="show('Section1'); colour('Section6') "
+            style="background-color: #64ffda; color: black"
+          >
             NEO Pvt. Ltd
           </div>
-          <div class="NEO">Social Pillow</div>
-          <div class="NEO">AccioJob Pvt. Ltd</div>
-          <div class="NEO">Gloablashala Edu</div>
-          <div class="NEO">SuperCA</div>
+          <div
+            class="NEO"
+            id="Section7"
+            onclick="show('Section2');colour('Section7') "
+            style="background-color: #000000; color: rgb(255, 255, 255)"
+          >
+            Social Pillow
+          </div>
+          <div
+            class="NEO"
+            id="Section8"
+            onclick="show('Section3');colour('Section8')"
+            style="background-color: #000000; color: rgb(255, 255, 255)"
+          >
+            Start Smart Investment Solution
+          </div>
+          <div
+            class="NEO"
+            id="Section9"
+            onclick="show('Section4');colour('Section9')"
+            style="background-color: #000000; color: rgb(255, 255, 255)"
+          >
+            Gloablashala Edu
+          </div>
+          <div
+            class="NEO"
+            id="Section10"
+            onclick="show('Section5');colour('Section10')"
+            style="background-color: #000000; color: rgb(255, 255, 255)"
+          >
+            SuperCA
+          </div>
         </div>
-        <div class="allexperiences">
-        <div class="ExperienceSection" id="experience1" >
+
+        <div class="ExperienceSection" id="Section1">
           <p class="GraphicDesigner">
             Graphic Designer
             <span class="National">@National Engineering Olympiyad</span>
@@ -146,12 +184,65 @@
             </li>
           </ul>
         </div>
-        <div class="ExperienceSection" id="experience2" hidden>
+
+        <div class="ExperienceSection" id="Section2" style="display: none">
+          <p class="GraphicDesigner">
+            Founder & CEO
+            <span class="National">@Social Pillow Media</span>
+          </p>
+          <p class="dateOfJoin">Feb 2021 - Present</p>
+          <ul>
+            <li>
+              Social Pillow is a one-stop solution for all your social media
+              needs, we are on a mission to help out new businesses and startups
+              to build their online presence.
+            </li>
+            <li>
+              Until now we have served more than 15+ startups and small
+              businesses. we are also working with some prominent edtech brands
+              like National Engineering Olympiad and Internship Studio.
+            </li>
+          </ul>
+        </div>
+
+        <div class="ExperienceSection" id="Section3" style="display: none">
+          <p class="GraphicDesigner">
+            Social Media Manager
+            <span class="National">@Start Smart Investment Solution</span>
+          </p>
+          <p class="dateOfJoin">Jan 2021 - Present</p>
+          <ul>
+            <li>
+              Start Smart Investment Solution is a Financial advisory, I am
+              working with them from 1 year now.
+            </li>
+            <li>
+              I am managing the social media side of their Business by helping
+              them in Graphic Designing, Social Media Management, Video Editing,
+              Copywriting and Content Research.
+            </li>
+          </ul>
+        </div>
+        <div class="ExperienceSection" id="Section4" style="display: none">
           <p class="GraphicDesigner">
             Graphic Designer
-            <span class="National">@National Engineering Olympiyad</span>
+            <span class="National">@Globalshala Education </span>
           </p>
-          <p class="dateOfJoin">March 2021 - Present</p>
+          <p class="dateOfJoin">May 2021 - July 2021</p>
+          <ul>
+            <li>
+              Edtech platform Globalshala connects students with paid internship
+              opportunities around the world.
+            </li>
+            <li>Helping them out to design content for Contest, Internship.</li>
+          </ul>
+        </div>
+        <div class="ExperienceSection" id="Section5" style="display: none">
+          <p class="GraphicDesigner">
+            Graphic Designer
+            <span class="National">@Super CA Tax Consultancy </span>
+          </p>
+          <p class="dateOfJoin">July 2021 - Present</p>
           <ul>
             <li>
               NEO is well known competitive platform that provides engineering
@@ -161,24 +252,8 @@
               Working on their next advertising champion for promoting NEO 4.0
               and NEO 5.0
             </li>
-            <div class="ExperienceSection" id="experience3" hidden>
-              <p class="GraphicDesigner">
-                Graphic Designer
-                <span class="National">@National Engineering Olympiyad</span>
-              </p>
-              <p class="dateOfJoin">March 2021 - Present</p>
-              <ul>
-                <li>
-                  NEO is well known competitive platform that provides engineering
-                  students an opportunity to grow.
-                </li>
-                <li>
-                  Working on their next advertising champion for promoting NEO 4.0
-                  and NEO 5.0
-                </li>
           </ul>
         </div>
-      </div>
       </div>
     </div>
 
@@ -343,8 +418,7 @@
       <div class="getintouchdiscription">
         <p>
           I am constantly looking for new opportunities in industry, I am
-          willing to work in the field of web-development, software development
-          and dev-ops.
+          willing to work in the field of graphic designing, web-development and UI/UX designing.
           <br />
           <br />
           Apart from that, my inbox is open to any kind of queries as well
@@ -354,18 +428,19 @@
         </p>
       </div>
       <div class="sayhello">
-        <button>Say Hello</button>
+        <a href="mailto:pratikmirchapure@gmail.com" target="_blank" ><button>Say Hello</button></a>
+        
       </div>
     </div>
 
     <!-- Contact Section  -->
-    <div class="contactback">
+    <div class="contactback" id="contact">
       <div class="contact container">
         <div class="contacttext">
           <p class="contacttitle">Contact</p>
           <div class="circle4"></div>
-          <p class="mail"><span>Email Id</span> → pratikmirchapure@gmail.com</p>
-          <p class="mobileno"><span>Mobile No.</span> → +91 9604149110</p>
+          <p class="mail"><span>Email Id →</span>  pratikmirchapure@gmail.com</p>
+          <p class="mobileno"><span>Mobile No. →</span>  +91 9604149110</p>
           <div class="socialmediaicons">
             <a
               href="https://www.linkedin.com/in/pratik-mirchapure?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3B9%2BQ%2BF4LfRqeEG3V%2FCvwulw%3D%3D"

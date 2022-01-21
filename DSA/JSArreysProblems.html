@@ -1,14 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
+    <style>
+      .main {
+        display: flex;
+        justify-content: space-evenly;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <div class="one">
+        <h1>Like Ice Cream</h1>
+        <ul>
+          <li></li>
+        </ul>
+      </div>
+      <div class="two">
+        <h1>Like Ice Cream</h1>
+        <ul></ul>
+      </div>
+    </div>
+
     <script>
-        let inputArray = [
+      let inputArray = [
         { name: "Amber", batch: "Batch 12", likesIceCream: false },
         { name: "Pratik", batch: "Batch 12", likesIceCream: true },
         { name: "Charan", batch: "Batch 11", likesIceCream: false },
@@ -29,7 +48,12 @@
         names.push(value.name);
       });
 
+
+      const para = document.createElement("p");
+      para.innerHTML = "This is a paragraph.";
+      document.getElementById("myDIV").appendChild(para);
+      
       console.log(names);
     </script>
-</body>
+  </body>
 </html>

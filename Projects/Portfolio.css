@@ -40,7 +40,7 @@ body {
   font-family: "Myride Pro";
   font-weight: 400;
 }
-.nav-link:hover{
+.nav-link:hover {
   color: #64ffda;
 }
 
@@ -138,9 +138,9 @@ body {
 .aboutdescription {
   font-style: normal;
   font-weight: normal;
-  font-size: 23px;
-  line-height: 37px;
-  width: 50%;
+  font-size: 20px;
+  line-height: 30px;
+  width: 55%;
   text-align: left;
   margin-left: 10rem;
 }
@@ -187,12 +187,8 @@ body {
 .companyname div {
   margin: 5px 0 5px 0;
   background-color: black;
-  padding: 10px 150px 10px 10px;
+  padding: 10px 40px 10px 10px;
   border-radius: 0px 40px 40px 0;
-}
-.clicked{
-  background-color: #64ffda !important;
-  color: black
 }
 
 .GraphicDesigner {
@@ -451,13 +447,12 @@ body {
   font-weight: 100;
   opacity: .1;
 } */
-.mailboximage{
+.mailboximage {
   margin-right: 10rem;
 }
 
-.contactback{
+.contactback {
   background-color: black;
-  
 }
 /*
 fonts

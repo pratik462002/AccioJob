@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS CallBack</title>
+  </head>
+  <body>
+    <script>
+      //   function fun1(arr) {
+      //     console.log("In function 1");
+      //     for (let index = 0; index < arr.length; index++) {
+      //       console.log(index);
+      //     }
+      //   }
+
+      function fun1(callback) {
+        setTimeout(function () {
+          console.log("In function 1");
+          callback();
+        }, 3000);
+      }
+
+      // function fun2() {
+      //   console.log("In function 2");
+      // }
+      //   fun1(fun2);
+
+      fun1(function () {
+        console.log("In function 2");
+      });
+    </script>
+  </body>
+</html> v
