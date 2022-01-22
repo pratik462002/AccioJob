@@ -115,11 +115,84 @@ body {
   font-family: "Product Sans";
   position: relative;
 }
+.progressbar{
+  color: white;
+  
+}
+
+.flag1{
+  position: absolute;
+  top: 41.5rem;
+  left: 75rem;
+  background-image: url(/Projects/PortfolioImg/Rectangle\ 74.png);
+  width: 137px;
+  height: 30px;
+  padding-left: 15px;
+  padding-top: 3px;
+}
+.flag2{
+  position: absolute;
+  top: 30rem;
+  left: 75rem;
+  background-image: url(/Projects/PortfolioImg/Rectangle\ 74.png);
+  width: 137px;
+  height: 30px;
+  padding-left: 15px;
+  padding-top: 3px;
+}
+.flag3{
+  position: absolute;
+  top: 27rem;
+  left: 75rem;
+  background-image: url(/Projects/PortfolioImg/Rectangle\ 74.png);
+  width: 137px;
+  height: 30px;
+  padding-left: 15px;
+  padding-top: 3px;
+}
+.flag4{
+  color: black;
+  position: absolute;
+  top: 22rem;
+  left: 75rem;
+  background-image: url(/Projects/PortfolioImg/Rectangle\ 75.png);
+  width: 137px;
+  height: 30px;
+  padding-left: 15px;
+  padding-top: 3px;
+}
+
+
+.bar{
+  position: absolute;
+  top: 22rem;
+  left: 65rem;
+  width: 633px;
+  height: 10px;
+  background-color: white;
+  background: linear-gradient(-90deg, rgba(255, 255, 255, 0) 0%, #FFFFFF 46.45%, #FFFFFF 100%);;  border-radius: 10px;
+  transform: rotate(-90deg);
+}
+.bar2{
+  position: absolute;
+  top: 33rem;
+  left: 75.42rem;
+  width: 300px;
+  height: 10.2px;
+  background-color: #64ffda;
+  border-radius: 10px;
+  transform: rotate(-90deg);
+}
+.aboutsection{
+  position: relative;
+}
 .abouttitle {
   font-family: "Product Sans Bold";
   margin-left: 3rem;
   font-size: 120px;
   color: #64ffda;
+  width: fit-content;
+  margin-right: 0;
 }
 
 .abouttitle span {
@@ -143,6 +216,9 @@ body {
   width: 55%;
   text-align: left;
   margin-left: 10rem;
+}
+.aboutdescription span{
+  color: #64ffda;
 }
 
 .about ul {
@@ -183,6 +259,7 @@ body {
   border-left: 5px #64ffda solid;
   /* border-top-left-radius: 10px; */
 }
+
 
 .companyname div {
   margin: 5px 0 5px 0;
