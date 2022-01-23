@@ -27,28 +27,28 @@
     </div>
 
     <script>
-      let inputArray = [
-        { name: "Amber", batch: "Batch 12", likesIceCream: false },
-        { name: "Pratik", batch: "Batch 12", likesIceCream: true },
-        { name: "Charan", batch: "Batch 11", likesIceCream: false },
-        { name: "Dhanashree", batch: "Batch 11", likesIceCream: true },
-        { name: "Anirban", batch: "Batch 10", likesIceCream: false },
-      ];
+      // let inputArray = [
+      //   { name: "Amber", batch: "Batch 12", likesIceCream: false },
+      //   { name: "Pratik", batch: "Batch 12", likesIceCream: true },
+      //   { name: "Charan", batch: "Batch 11", likesIceCream: false },
+      //   { name: "Dhanashree", batch: "Batch 11", likesIceCream: true },
+      //   { name: "Anirban", batch: "Batch 10", likesIceCream: false },
+      // ];
 
-      let arr = inputArray.filter(function (value) {
-        if (value.likesIceCream == true && value.batch == "Batch 11") {
-          return true;
-        } else {
-          return false;
-        }
-      });
+      // let arr = inputArray.filter(function (value) {
+      //   if (value.likesIceCream == true && value.batch == "Batch 11") {
+      //     return true;
+      //   } else {
+      //     return false;
+      //   }
+      // });
 
-      let names = [];
-      arr.forEach(function (value) {
-        names.push(value.name);
-      });
+      // let names = [];
+      // arr.forEach(function (value) {
+      //   names.push(value.name);
+      // });
 
-      console.log(names);
+      // console.log(names);
 
       // let arr2=arr.filter(function (value) {
       //   if (value.batch=="Batch 11") {
@@ -58,6 +58,24 @@
       //     return false
       //   }
       // })
+
+      class Solution {
+        convertFive(num) {
+          var no = num;
+          var arr = Array.from(String(no), Number);
+          var arrnew = arr.map(function (value) {
+            if (value == 0) {
+              return value + 5;
+            } else {
+              return value;
+            }
+            var finalno = arrnew.join(",");
+            return finalno;
+          });
+        }
+      }
+
+      
     </script>
   </body>
 </html>

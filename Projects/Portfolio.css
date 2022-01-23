@@ -357,12 +357,14 @@ body {
   font-weight: 300;
 }
 .project2 {
+  width: 39.2rem;
   background-color: black;
   margin-left: 1rem;
   border-radius: 20px;
   padding: 2rem;
 }
 .project22 {
+  width: 24rem;
   background-color: #272727;
   margin-left: 1rem;
   border-radius: 20px;
@@ -383,12 +385,14 @@ body {
 }
 
 .project21 {
+  width: 24rem;
   background-color: #272727;
   margin-left: 3rem;
   border-radius: 20px;
   padding: 2rem;
 }
 .project23 {
+  width: 24rem;
   background-color: #272727;
   margin-left: 1rem;
   border-radius: 20px;
