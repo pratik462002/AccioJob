@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const lookup = {
+        A: "N",
+        B: "O",
+        C: "P",
+        D: "Q",
+        E: "R",
+        F: "S",
+        G: "T",
+        H: "U",
+        I: "V",
+        J: "W",
+        K: "X",
+        L: "Y",
+        M: "Z",
+        N: "A",
+        O: "B",
+        P: "C",
+        Q: "D",
+        R: "E",
+        S: "F",
+        T: "G",
+        U: "H",
+        V: "I",
+        W: "J",
+        X: "K",
+        Y: "L",
+        Z: "M",
+      };
+
+      function rot13(encodedStr) {
+        const codeArr = encodedStr.split(""); // String to Array
+        let decodedArr = []; // Your Result goes here
+        // Only change code below this line
+        let decodedArr2 = codeArr.map(function (value) {
+          if (lookup[value] === undefined) {
+            return decodedArr.push(value);
+          } else {
+            return decodedArr.push(lookup[value]);
+          }
+        });
+        // Only change code above this line
+        return decodedArr.join(""); // Array to String
+      }
+
+      // You can test your code by running the above function and printing it to console by pressing the run button at the top. To run it with input 36, uncomment the following line
+
+      // console.log(rot13("SERR YBIR? NPPVBWBO"));
+    //   console.log(rot13('PRATIK"S'));
+      module.exports = rot13;
+    </script>
+  </body>
+</html>
