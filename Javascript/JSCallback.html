@@ -5,31 +5,76 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>JS CallBack</title>
+    <style>
+      .done {
+        color: white;
+        padding: 10px;
+        width: fit-content;
+        border-radius: 10px;
+        background-color: green;
+      }
+      h1 {
+        color: white;
+        padding: 10px;
+        width: fit-content;
+        border-radius: 10px;
+        background-color: red;
+      }
+    </style>
   </head>
   <body>
+    <h1>Order Received!</h1>
+    <h1>Chef started preparing</h1>
+    <h1>Pizza Sauce added</h1>
+    <h1>First layer of chezze</h1>
+    <h1>Topping added</h1>
+    <h1>Final layer of chezze</h1>
+    <h1>Pizza baked</h1>
+    <h1>Organo is added and packed</h1>
+    <h1>The order is ready and handed over to the Zomato guy!</h1>
     <script>
-      //   function fun1(arr) {
-      //     console.log("In function 1");
-      //     for (let index = 0; index < arr.length; index++) {
-      //       console.log(index);
-      //     }
-      //   }
+      var process = document.querySelectorAll("h1");
+      console.log(process);
 
-      function fun1(callback) {
+      const exexuteOrder = function (callback) {
         setTimeout(function () {
-          console.log("In function 1");
-          callback();
-        }, 3000);
-      }
+          process[0].classList.add("done");
+          process[1].classList.add("done");
+          console.log("Order Received!");
+          console.log("Chef started preparing");
+          setTimeout(function () {
+            process[2].classList.add("done");
+            console.log("Pizza Sauce added");
+            setTimeout(() => {
+              process[3].classList.add("done");
+              console.log("First layer of chezze");
+              setTimeout(() => {
+                process[4].classList.add("done");
+                console.log("Topping added");
+                setTimeout(() => {
+                  process[5].classList.add("done");
+                  console.log("Final layer of chezze");
+                  setTimeout(() => {
+                    process[6].classList.add("done");
+                    console.log("Pizza baked");
+                    setTimeout(() => {
+                      process[7].classList.add("done");
+                      console.log("Organo is added and packed");
+                      callback();
+                    }, 4000);
+                  }, 6000);
+                }, 2000);
+              }, 4000);
+            }, 3000);
+          }, 5000);
+        }, 2000);
+      };
 
-      // function fun2() {
-      //   console.log("In function 2");
-      // }
-      //   fun1(fun2);
-
-      fun1(function () {
-        console.log("In function 2");
+      exexuteOrder(function () {
+        process[8].classList.add("done");
+        console.log("The order is ready and handed over to the Zomato guy!");
       });
     </script>
+    
   </body>
-</html> v
+</html>
