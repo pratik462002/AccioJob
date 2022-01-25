@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let bankBalances = [30000, 1000, 50000, 20000, 40000];
+      bankBalances = bankBalances.map(function (money) {
+        let moneyarr = money.toString().split("");
+        if (moneyarr[0] % 2 == 0) {
+          return (money = money + (20 * money) / 100);
+        } else {
+          return (money = money + (35 * money) / 100);
+        }
+      });
+
+      console.log(bankBalances);
+      //   let valuearr = bankBalances[0].toString().split("");
+      //   console.log(valuearr[0] % 2 == 0);
+
+      //         let arr = [2000, 5000, 4000, 8000, 4500];
+
+      // // arr = arr.map(function (value) {
+      // //   value = value + 1000;
+      // //   return value;
+      // // });
+    </script>
+  </body>
+</html>
