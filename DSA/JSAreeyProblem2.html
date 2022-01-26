@@ -8,18 +8,17 @@
   </head>
   <body>
     <script>
-      let bankBalances = [30000, 1000, 50000, 20000, 40000];
-      bankBalances = bankBalances.map(function (money) {
-        let moneyarr = money.toString().split("");
-        if (moneyarr[0] % 2 == 0) {
-          return (money = money + (20 * money) / 100);
-        } else {
-          return (money = money + (35 * money) / 100);
-        }
-      });
+      // let bankBalances = [30000, 1000, 50000, 20000, 40000];
+      // bankBalances = bankBalances.map(function (money) {
+      //   let moneyarr = money.toString().split("");
+      //   if (moneyarr[0] % 2 == 0) {
+      //     return (money = money + (20 * money) / 100);
+      //   } else {
+      //     return (money = money + (35 * money) / 100);
+      //   }
+      // });
 
-      console.log(bankBalances);
-
+      // console.log(bankBalances);
 
       //   let valuearr = bankBalances[0].toString().split("");
       //   console.log(valuearr[0] % 2 == 0);
@@ -30,6 +29,15 @@
       // //   value = value + 1000;
       // //   return value;
       // // });
+
+      let arr = [1, 3, 5, 2, 0];
+
+      let sortarr = arr.sort((a, b) => a - b);
+      sortarr.forEach(function (value, index) {
+        if (value !== index) {
+          console.log(value - 1);
+        }
+      });
 
       
     </script>

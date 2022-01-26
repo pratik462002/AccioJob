@@ -102,8 +102,41 @@
 
       // Promise2
 
-      
-      
+      //   let studentData = [
+      //     {
+      //       name: "Prajakta",
+      //       batch: "Batch 11",
+      //     },
+      //     {
+      //       name: "Pratik",
+      //       batch: "Batch 12",
+      //     },
+      //   ];
+
+      //   const fetchingData = () => {
+      //     return new Promise((resolve, rejected) => {
+      //       console.log("Feating studant data");
+      //       setTimeout(() => {
+      //         console.log("data fetch sucessfully");
+      //         resolve(studentData);
+      //       }, 4000);
+      //     });
+      //   };
+      //   fetchingData().then(function (studentData) {
+      //     console.log(studentData);
+      //   });
+      let promise = new Promise(function (resolve, reject) {
+        resolve("My name is ");
+      });
+      promise
+        .then(function (resolvedMessage) {
+          return resolvedMessage + "Pratik ";
+        })
+        .then(function (UpdatedMessage) {
+          return UpdatedMessage +'Marotrao ';
+        }).then(function (resolvedMessage){
+          console.log(resolvedMessage + 'Mirchapure ')
+        });
     </script>
   </body>
 </html>
