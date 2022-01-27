@@ -30,16 +30,42 @@
       // //   return value;
       // // });
 
-      let arr = [1, 3, 5, 2, 0];
+      // let arr = [1, 3, 5, 2];
 
-      let sortarr = arr.sort((a, b) => a - b);
-      sortarr.forEach(function (value, index) {
-        if (value !== index) {
-          console.log(value - 1);
+      // // let sortarr = arr.sort((a, b) => a - b);
+      // // sortarr.forEach(function (value, index) {
+      // //   if (value !== index) {
+      // //     console.log(value - 1);
+      // //   }
+      // // });
+
+      // let sortarr = arr.sort((a, b) => a - b);
+      // sortarr.unshift(0);
+      // sortarr.forEach(function (value, index) {
+      //   if (value !== index) {
+      //     console.log(value - 1);
+      //   }
+      // });
+
+      function PalinArray(arr) {
+        var arr2 = [];
+        var store = arr;
+        arr.forEach(function (value, index) {
+          let num = value;
+          let numarr = value.toString().split("");
+          if (value == numarr.reverse().join("")) {
+            arr2.push(value);
+          }
+        });
+        if (arr2.length == store.length) {
+          console.log(1);
         }
-      });
+        if (arr2.length!==store.length) {
+          console.log(0);
+        }
+      }
 
-      
+      PalinArray([111, 2222, 5556]);
     </script>
   </body>
 </html>
