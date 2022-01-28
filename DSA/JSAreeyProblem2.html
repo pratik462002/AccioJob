@@ -109,36 +109,9 @@
       students.forEach(function (value, index) {
         let arr = value.marks;
         let markarr = Object.values(arr);
-        sumarr.push(markarr); 
+        sumarr.push(eval(markarr.join("+")));
       });
-
-      // sumarr.forEach(function (value, index) {
-      //   var sum2=0
-      //   let sum = value.forEach(function (value2){
-      //     sum2+=value2
-      //   })
-      //   console.log(sum2)
-       
-      // })
-
-     for (let index = 0; index < sumarr.length; index++) {
-       const element = sumarr[index];
-       console.log(...element)
-       let sum = element.reduce((total,value)=>{
-         return total+value
-       })
-     }
-
-      console.log(sumarr);
-
-
-
-       // let sum=arr.reduce((total,element)=>{
-      //   // console.log(total)
-      //   return total+element
-      // })
-      // console.log(sum)
-
+      console.log(sumarr)
     </script>
   </body>
 </html>
