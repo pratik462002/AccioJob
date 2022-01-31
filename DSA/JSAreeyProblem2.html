@@ -157,7 +157,7 @@
       //     else{
       //       return false
       //     }
-          
+
       //   })
       //   let outputstr=arr2.join('')
       //   // console.log(outputstr)
@@ -167,7 +167,38 @@
 
       // removeDups("pptrar");
 
-      
+      // function find_multiplication(a, b) {
+      //   let arr1 = a.sort((a, b) => a - b);
+      //   console.log(arr1)
+      //   let arr2 = b.sort((a,b) => a - b);
+      //   console.log(arr2)
+      //   let max = arr1[arr1.length-1];
+      //   let min = arr2[0];
+
+      //   // return min * max;
+      //   //code here
+      //   console.log(min)
+      // }
+      // let a = [5, 7, 9, 3, 6, 2];
+      // let b = [1, 2, 6, -1, 0, 9];
+      // find_multiplication(a, b);
+
+      function search(arr, X) {
+        let findno=arr.filter(function (value,index) {
+          if (value==X) {
+            return true
+          }
+          else{
+            return false
+          }
+        })
+        let indexofno= arr.indexOf(findno[0]) 
+        console.log(indexofno)
+        // write your code here
+      }
+      let arr=[1,2,3,4]
+      let x=3
+      search(arr,x)
     </script>
   </body>
 </html>
