@@ -128,7 +128,7 @@
       // let promise = new Promise(function (resolve, reject) {
       //   resolve("My name is ");
       // });
-      // promise 
+      // promise
       //   .then(function (resolvedMessage) {
       //     return resolvedMessage + "Pratik ";
       //   })
@@ -138,8 +138,34 @@
       //     console.log(resolvedMessage + 'Mirchapure ')
       //   });
 
-        
+      let promise1 = new Promise((resolve, reject) => {
+        setTimeout(() => {
+          resolve("I'm Promise 1 and I was resolved after 3 secs");
+        }, 3000);
+      });
 
+      let promise2 = new Promise((resolve, reject) => {
+        setTimeout(() => {
+          resolve("I'm Promise 2 and I was resolved after 5 secs");
+        }, 5000);
+      });
+
+      let promise3 = new Promise((resolve, reject) => {
+        setTimeout(() => {
+          resolve("I'm Promise 3 and I was resolved after 7 secs");
+        }, 7000);
+      });
+
+      // Consolidate all promises (.then works when all promises resolve)
+      Promise.all([promise1, promise2, promise3]).then((resolvedMessage) => {
+        console.log(resolvedMessage)
+      })
+
+      // Consolidate all promises (.then works right after even one promise resolve)
+      // Promise.any([promise1, promise2, promise3]).then((resolvedMessage) => {
+      //   console.log(resolvedMessage);
+      // });
+      
 
     </script>
   </body>
