@@ -75,8 +75,18 @@
       //   }
       // }
 
-      
-      
+      convert(arr,n){
+        let newarr=arr.map(function(value,index){
+          return value 
+        })
+        let arr1 = arr.sort((a, b) => a - b);
+        let arr2 = newarr.map(function (value) {
+          let num = arr1.indexOf(value);
+          return num;
+        });
+        return arr2//code here
+     }
+      let arr=[]
     </script>
   </body>
 </html>

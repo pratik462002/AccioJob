@@ -244,26 +244,26 @@
       // let b = [1, 2, 6, -1, 0, 9];
       // find_multiplication(a, b);
 
-      function search(arr, X) {
-        let findno=arr.filter(function (value,index) {
-          if (value==X) {
-            return true
-          }
-          else{
-            return false
-          }
-        })
-        let indexofno= arr.indexOf(findno[0])
-        console.log(indexofno)
-        // write your code here
-      }
-      let arr = [5, 10, 40, 30, 20];
-      let n = 3;
-      // search(arr,x)
+      // function search(arr, X) {
+      //   let findno=arr.filter(function (value,index) {
+      //     if (value==X) {
+      //       return true
+      //     }
+      //     else{
+      //       return false
+      //     }
+      //   })
+      //   let indexofno= arr.indexOf(findno[0])
+      //   console.log(indexofno)
+      //   // write your code here
+      // }
+      // let arr = [5, 10, 40, 30, 20];
+      // let n = 3;
+      // search(arr,n)
 
-      // // f
+      // // // f
 
-      // /
+      // // /
 
       // function convertFive(num) {
       //   let arr = num.toString().split("");
@@ -300,6 +300,23 @@
       // let n = 5;
       // let k = 2;
       // kLargest(arr, n, k);
+
+      function convert(arr, n) {
+        const temp = [...arr]
+        const arr1 = arr.sort((a, b) => a - b);
+        let arr2 = temp.map(function (value) {
+          let num = arr1.indexOf(value);
+          return num;
+        });
+        const output = [...arr2]
+
+        console.log(output) ; 
+        
+        //code here
+      }
+      let arr = [5, 10, 40, 30, 20];
+      let n = arr.length;
+      convert(arr,n);
     </script>
   </body>
 </html>
