@@ -301,22 +301,54 @@
       // let k = 2;
       // kLargest(arr, n, k);
 
-      function convert(arr, n) {
-        const temp = [...arr]
-        const arr1 = arr.sort((a, b) => a - b);
-        let arr2 = temp.map(function (value) {
-          let num = arr1.indexOf(value);
-          return num;
-        });
-        const output = [...arr2]
+      // function convert(arr, n) {
+      //   const temp = [...arr]
+      //   const arr1 = arr.sort((a, b) => a - b);
+      //   let arr2 = temp.map(function (value) {
+      //     let num = arr1.indexOf(value);
+      //     return num;
+      //   });
+      //   const output = [...arr2]
 
-        console.log(output) ; 
-        
+      //   console.log(output) ;
+
+      //   //code here
+      // }
+
+      // function remove_duplicate(arr, n) {
+      //   let newarr = arr.filter(function (value, index) {
+      //     if (arr.indexOf(value) == index) {
+      //       return true;
+      //     } else {
+      //       return false;
+      //     }
+      //   });
+      //   console.log(newarr);
+
+      //   //code here
+      // }
+
+      // let arr = [6, 6, 6, 6, 6, 6, 6, 6];
+      // let n = arr.length;
+      // remove_duplicate(arr, n);
+
+      function removeDuplicates(str) {
+        let str1=str
+        let arr= str.split("")
+        let arr2=arr.map(function(value,index){
+          if (arr.indexOf(value)==index) {
+            return true
+          }
+          else{
+            return false
+          }
+        })
+
+        let str2=arr2.join('')
+        console.log(str2)
         //code here
       }
-      let arr = [5, 10, 40, 30, 20];
-      let n = arr.length;
-      convert(arr,n);
+      removeDuplicates('geeksforgeeks')
     </script>
   </body>
 </html>
