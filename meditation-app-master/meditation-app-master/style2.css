@@ -141,14 +141,14 @@ body {
 .sounds-select button {
   color: white;
   width: fit-content;
-  height: ;
+  
   background: white;
   font-size: 20px;
   border: 2px solid white;
   cursor: pointer;
   border-radius: 20px;
 }
-.sound1 img {
+.sound11 img {
   padding: 15px;
   width: 100px;
 }
