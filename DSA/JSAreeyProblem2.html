@@ -332,23 +332,60 @@
       // let n = arr.length;
       // remove_duplicate(arr, n);
 
-      function removeDuplicates(str) {
-        let str1=str
-        let arr= str.split("")
-        let arr2=arr.map(function(value,index){
-          if (arr.indexOf(value)==index) {
-            return true
-          }
-          else{
-            return false
-          }
-        })
+      // function removeDuplicates(str) {
+      //   let str1=str
+      //   let arr= str.split("")
+      //   let arr2=arr.map(function(value,index){
+      //     if (arr.indexOf(value)==index) {
+      //       return true
+      //     }
+      //     else{
+      //       return false
+      //     }
+      //   })
 
-        let str2=arr2.join('')
-        console.log(str2)
-        //code here
+      //   let str2=arr2.join('')
+      //   console.log(str2)
+      //   //code here
+      // }
+      // removeDuplicates('geeksforgeeks')
+
+      // function countOddEven(arr) {
+      //   let arr3 = [];
+      //   for (let i = 0; i < arr.length; i++) {
+      //     let value = arr[i];
+      //     if (arr.lastIndexOf(value) == i && arr.indexOf(value) == i) {
+      //       return value;
+      //     } else {
+      //       arr3.push(value);
+      //     }
+      //   }
+      //   if (arr3.length == arr.length) {
+      //     return 0;
+      //   }
+      // }
+      // let arr = [1,1,11,1,1,];
+
+      // console.log(countOddEven(arr));
+
+      function countOddEven(arr) {
+        let arr2 = arr.filter(function (value, index) {
+          if (arr.indexOf(value) == index) {
+            return true;
+          } else {
+            return false;
+          }
+        });
+
+        if (arr.length == arr2.length) {
+          console.log(-1);
+        } else {
+          console.log(arr2);
+        }
       }
-      removeDuplicates('geeksforgeeks')
+      let arr = [0, 3, 1, 2];
+
+      countOddEven(arr);
     </script>
   </body>
 </html>
