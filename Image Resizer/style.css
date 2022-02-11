@@ -1,0 +1,64 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.background {
+  position: fixed;
+  width: 100%;
+  height: 65vh;
+  z-index: -50;
+  background: linear-gradient(180deg, #3755bf 0%, #b992f0 100%);
+}
+
+.resizer {
+  align-items: center;
+  text-align: center;
+  padding-top: 20vh;
+  padding-bottom: 20vh;
+}
+
+.topbox {
+  padding: 2rem 2rem;
+  background: rgba(196, 196, 196, 0.2);
+  border: 2px solid #ffffff;
+  box-sizing: border-box;
+  backdrop-filter: blur(23px);
+  /* Note: backdrop-filter has minimal browser support */
+
+  border-radius: 44px 44px 0px 0px;
+  width: 35%;
+  align-items: center;
+  margin: auto;
+}
+
+.fileInput {
+  font-size: 20px;
+  font-weight: 100;
+  color: white;
+  align-items: center;
+  text-align: center;
+}
+
+.width,
+.height {
+  background-color: black;
+  margin-top: 1rem;
+  color: white;
+  font-size: 20px;
+  width: 8rem;
+  border: 1px solid white;
+  border-radius: 5px;
+}
+
+.lable {
+  color: white;
+  font-size: 20px;
+}
+
+.canvasboard {
+  background: #ffffff;
+  box-shadow: 8px 11px 28px rgba(0, 0, 0, 0.15);
+  width:35%;
+  margin: auto;
+}
