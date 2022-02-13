@@ -368,24 +368,138 @@
 
       // console.log(countOddEven(arr));
 
-      function countOddEven(arr) {
-        let arr2 = arr.filter(function (value, index) {
-          if (arr.indexOf(value) == index) {
+      // function countOddEven(arr) {
+      //   let arr2 = arr.filter(function (value, index) {
+      //     if (arr.indexOf(value) == index) {
+      //       return true;
+      //     } else {
+      //       return false;
+      //     }
+      //   });
+
+      //   if (arr.length == arr2.length) {
+      //     console.log(-1);
+      //   } else {
+      //     console.log(arr2);
+      //   }
+      // }
+      // let arr = [0, 3, 1, 2];
+
+      // countOddEven(arr);
+
+      function peakElement(arr) {
+        // let arr2 = [];
+        // let arr3 = [];
+        // arr.forEach(function (value, index) {
+        //   if (arr.length - 1 == index) {
+        //     if (value > arr[index - 1]) {
+        //       arr2.push(value);
+        //     } else {
+        //       arr3.push(value);
+        //     }
+        //   } else if (index == 0) {
+        //     if (value > arr[index + 1]) {
+        //       arr2.push(value);
+        //     } else {
+        //       arr3.push(value);
+        //     }
+        //   } else {
+        //     if (value > arr[index - 1] && value > arr[index + 1]) {
+        //       arr2.push(value);
+        //     } else {
+        //       arr3.push(value);
+        //     }
+        //   }
+        // });
+        // if (arr3.length == arr.length) {
+        //   console.log(0);
+        // } else {
+        //   let value = arr2[0];
+        //   console.log(arr.indexOf(value));
+        // }
+        // console.log(arr2)
+        // console.log(arr3)
+        // code here
+      }
+
+      // let arr = [1, 5, 2, 3, 1, 8, 6];
+
+      // peakElement(arr);
+
+      //   function reverseWord(str) {
+      //     let arr = str.split("");
+      //     let arr2 = arr.reverse();
+
+      //     let str2=arr2.join("")
+      //     console.log(str2);
+
+      //     //Your code here
+      //   }
+
+      //   let str = "Pratik";
+
+      //   reverseWord(str);
+
+      // function kthSmallest(arr, x) {
+      //   let arr2 = arr.filter(function (value, index) {
+      //     if (value == x) {
+      //       return true;
+      //     } else {
+      //       return false;
+      //     }
+      //   });
+
+      //   let num = arr2.length;
+      //   console.log(num);
+      //   //code here
+      // }
+
+      // let arr = [1, 1, 1, 1, 1, 3];
+      // let x = 1;
+      // kthSmallest(arr, x);
+
+      // function kthSmallest(arr,arr1) {
+
+      //   let postive = [];
+      //   let negative = [];
+      //   arr.forEach(function (value) {
+      //     if (value < 0) {
+      //       negative.push(value);
+      //     } else {
+      //       postive.push(value);
+      //     }
+      //   });
+
+      //   let arr2 = [...postive,...negative];
+      //   console.log(arr2);
+      //   //code here
+      // }
+
+      // let arr = [1, 2, 3, 4, 5];
+      // let arr1 = [1,2,3];
+
+      // kthSmallest(arr,arr1);
+
+      function kthSmallest(arr, arr1) {
+        let arr3 = arr.concat(arr1);
+
+        let arr4 = arr3.filter(function (value, index) {
+          if (arr3.indexOf(value) == index) {
             return true;
           } else {
             return false;
           }
         });
-
-        if (arr.length == arr2.length) {
-          console.log(-1);
-        } else {
-          console.log(arr2);
-        }
+        console.log(arr4);
+        //code here
       }
-      let arr = [0, 3, 1, 2];
 
-      countOddEven(arr);
+      let arr = [1, 2, 3, 4, 5];
+      let arr1 = [1, 2, 3];
+
+      kthSmallest(arr, arr1);
+
+      //
     </script>
   </body>
 </html>
