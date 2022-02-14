@@ -431,6 +431,7 @@
       //     let arr2 = arr.reverse();
 
       //     let str2=arr2.join("")
+
       //     console.log(str2);
 
       //     //Your code here
@@ -480,26 +481,39 @@
 
       // kthSmallest(arr,arr1);
 
-      function kthSmallest(arr, arr1) {
-        let arr3 = arr.concat(arr1);
+      // function kthSmallest(arr, arr1) {
+      //   let arr3 = arr.concat(arr1);
 
-        let arr4 = arr3.filter(function (value, index) {
-          if (arr3.indexOf(value) == index) {
-            return true;
-          } else {
-            return false;
-          }
-        });
-        console.log(arr4);
-        //code here
-      }
+      //   let arr4 = arr3.filter(function (value, index) {
+      //     if (arr3.indexOf(value) == index) {
+      //       return true;
+      //     } else {
+      //       return false;
+      //     }
+      //   });
+      //   console.log(arr4);
+      //   //code here
+      // }
 
-      let arr = [1, 2, 3, 4, 5];
-      let arr1 = [1, 2, 3];
+      // let arr = [1, 2, 3, 4, 5];
+      // let arr1 = [1, 2, 3];
 
-      kthSmallest(arr, arr1);
+      // kthSmallest(arr, arr1);
 
       //
+
+      function reverseWords(s) {
+        let arr = s.split(".");
+
+        let arr2 = arr.reverse();
+        let s2 = arr2.join(".");
+
+        console.log(s2);
+        // code here
+      }
+
+      let s = "i.like.this.program.very.much";
+      reverseWords(s);
     </script>
   </body>
 </html>
