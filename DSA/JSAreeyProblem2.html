@@ -387,40 +387,40 @@
 
       // countOddEven(arr);
 
-      function peakElement(arr) {
-        // let arr2 = [];
-        // let arr3 = [];
-        // arr.forEach(function (value, index) {
-        //   if (arr.length - 1 == index) {
-        //     if (value > arr[index - 1]) {
-        //       arr2.push(value);
-        //     } else {
-        //       arr3.push(value);
-        //     }
-        //   } else if (index == 0) {
-        //     if (value > arr[index + 1]) {
-        //       arr2.push(value);
-        //     } else {
-        //       arr3.push(value);
-        //     }
-        //   } else {
-        //     if (value > arr[index - 1] && value > arr[index + 1]) {
-        //       arr2.push(value);
-        //     } else {
-        //       arr3.push(value);
-        //     }
-        //   }
-        // });
-        // if (arr3.length == arr.length) {
-        //   console.log(0);
-        // } else {
-        //   let value = arr2[0];
-        //   console.log(arr.indexOf(value));
-        // }
-        // console.log(arr2)
-        // console.log(arr3)
-        // code here
-      }
+      // function peakElement(arr) {
+      // let arr2 = [];
+      // let arr3 = [];
+      // arr.forEach(function (value, index) {
+      //   if (arr.length - 1 == index) {
+      //     if (value > arr[index - 1]) {
+      //       arr2.push(value);
+      //     } else {
+      //       arr3.push(value);
+      //     }
+      //   } else if (index == 0) {
+      //     if (value > arr[index + 1]) {
+      //       arr2.push(value);
+      //     } else {
+      //       arr3.push(value);
+      //     }
+      //   } else {
+      //     if (value > arr[index - 1] && value > arr[index + 1]) {
+      //       arr2.push(value);
+      //     } else {
+      //       arr3.push(value);
+      //     }
+      //   }
+      // });
+      // if (arr3.length == arr.length) {
+      //   console.log(0);
+      // } else {
+      //   let value = arr2[0];
+      //   console.log(arr.indexOf(value));
+      // }
+      // console.log(arr2)
+      // console.log(arr3)
+      // code here
+      // }
 
       // let arr = [1, 5, 2, 3, 1, 8, 6];
 
@@ -502,18 +502,73 @@
 
       //
 
-      function reverseWords(s) {
-        let arr = s.split(".");
+      // function reverseWords(s) {
+      //   let arr = s.split(".");
 
-        let arr2 = arr.reverse();
-        let s2 = arr2.join(".");
+      //   let arr2 = arr.reverse();
+      //   let s2 = arr2.join(".");
 
-        console.log(s2);
-        
+      //   console.log(s2);
+
+      // }
+
+      // let s = "i.like.this.program.very.much";
+      // reverseWords(s);
+
+      // function reverseWords(s) {
+      //   let arr = [];
+      //   for (let index = 1; index < s + 1; index++) {
+      //     arr.push(index);
+      //   }
+
+      //   let sum = 1;
+      //   arr.forEach(function (element) {
+      //     sum *= element;
+      //   });
+      //   // let sum = arr.reduce((total, element) => {
+      //   //   return total * element;
+      //   // });
+      //   console.log(sum);
+      // }
+
+      // let s = 5;
+      // reverseWords(s);
+
+      function rearrange(arr) {
+        let postive = [];
+        let negative = [];
+        arr.forEach(function (value) {
+          if (value < 0) {
+            negative.push(value);
+          } else {
+            postive.push(value);
+          }
+        });
+
+        let arr2 = [];
+
+        for (let index = 0; index < arr.length; index++) {
+          if (index % 2 == 0) {
+            let value = postive.shift();
+            arr2.push(value);
+          } else {
+            let value = negative.shift();
+            arr2.push(value);
+          }
+        }
+
+        // // let num = postive.shift();
+
+        // // console.log(num);
+
+        // console.log(arr2);
+        // console.log(postive);
+        // console.log(negative);
+        // //code here
       }
 
-      let s = "i.like.this.program.very.much";
-      reverseWords(s);
+      let arr = [9, 4, -2, -1, 5, 0, -5, -3, 2];
+      rearrange(arr);
     </script>
   </body>
 </html>
