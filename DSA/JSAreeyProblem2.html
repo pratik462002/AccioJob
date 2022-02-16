@@ -569,6 +569,41 @@
 
       let arr = [9, 4, -2, -1, 5, 0, -5, -3, 2];
       rearrange(arr);
+      function rearrange(arr) {
+        let postive = [];
+        let negative = [];
+        arr.forEach(function (value) {
+          if (value < 0) {
+            negative.push(value);
+          } else {
+            postive.push(value);
+          }
+        });
+
+        let arr2 = [];
+
+        for (let index = 0; index < arr.length; index++) {
+          if (index % 2 == 0) {
+            let value = postive.shift();
+            arr2.push(value);
+          } else {
+            let value = negative.shift();
+            arr2.push(value);
+          }
+        }
+
+        // // let num = postive.shift();
+
+        // // console.log(num);
+
+        // console.log(arr2);
+        // console.log(postive);
+        // console.log(negative);
+        // //code here
+      }
+
+      let arr = [9, 4, -2, -1, 5, 0, -5, -3, 2];
+      rearrange(arr);
     </script>
   </body>
 </html>
