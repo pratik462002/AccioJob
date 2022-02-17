@@ -567,43 +567,101 @@
         // //code here
       }
 
-      let arr = [9, 4, -2, -1, 5, 0, -5, -3, 2];
-      rearrange(arr);
-      function rearrange(arr) {
-        let postive = [];
-        let negative = [];
-        arr.forEach(function (value) {
-          if (value < 0) {
-            negative.push(value);
-          } else {
-            postive.push(value);
+      // let arr = [9, 4, -2, -1, 5, 0, -5, -3, 2];
+      // rearrange(arr);
+      // function rearrange(arr) {
+      //   let postive = [];
+      //   let negative = [];
+      //   arr.forEach(function (value) {
+      //     if (value < 0) {
+      //       negative.push(value);
+      //     } else {
+      //       postive.push(value);
+      //     }
+      //   });
+
+      //   let arr2 = [];
+
+      //   for (let index = 0; index < arr.length; index++) {
+      //     if (index % 2 == 0) {
+      //       let value = postive.shift();
+      //       arr2.push(value);
+      //     } else {
+      //       let value = negative.shift();
+      //       arr2.push(value);
+      //     }
+      //   }
+
+      //   // // let num = postive.shift();
+
+      //   // // console.log(num);
+
+      //   // console.log(arr2);
+      //   // console.log(postive);
+      //   // console.log(negative);
+      //   // //code here
+      // }
+
+      // let arr = [9, 4, -2, -1, 5, 0, -5, -3, 2];
+      // rearrange(arr);
+
+      // function isPalindrome(S) {
+      //   let str2 = S.split("").reverse().join("");
+      //   if (S==str2) {
+      //     console.log(1)
+      //   }
+      //   else{
+      //     console.log(0)
+      //   }
+
+      //   //code here
+      // }
+
+      // isPalindrome('aba')
+
+      // function isPalindrome(S) {
+      //   let arr = S.split("");
+      //   let temparr = [];
+      //   let arr2 = arr.filter(function (value, index) {
+      //     if (arr.indexOf(value) == index && arr.lastIndexOf(value) == index) {
+      //       return true;
+      //     } else {
+      //       return false;
+      //     }
+      //   });
+
+      //   if (arr2.length>0) {
+      //     console.log(arr2[0])
+      //   }
+      //   else{
+      //     console.log("$")
+      //   }
+      //   //code here
+      // }
+
+      // isPalindrome("hheelloo");
+
+      function isPrime(n) {
+        if (n == 1 || n == 0) {
+          return false;
+        } else {
+          for (let index = 2; index < n; index++) {
+            if (n % index == 0) {
+              isPrime = false;
+              break;
+            }
           }
-        });
-
-        let arr2 = [];
-
-        for (let index = 0; index < arr.length; index++) {
-          if (index % 2 == 0) {
-            let value = postive.shift();
-            arr2.push(value);
+          if (isPrime) {
+            return true;
           } else {
-            let value = negative.shift();
-            arr2.push(value);
+            return false;
           }
         }
 
-        // // let num = postive.shift();
-
-        // // console.log(num);
-
-        // console.log(arr2);
-        // console.log(postive);
-        // console.log(negative);
-        // //code here
+        //code here
       }
 
-      let arr = [9, 4, -2, -1, 5, 0, -5, -3, 2];
-      rearrange(arr);
+      console.log(isPrime(0));
     </script>
   </body>
 </html>
